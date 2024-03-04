@@ -12,22 +12,15 @@ body{
   color: #363636;
   overflow-x:hidden;
 }
-
+div > article > h2{font-size:35px;}
 
 /* 2. 링크 글자모양, 색 */
 a{
   font-family:'Noto Sans KR', arial, sans-serif;
   text-decoration:none; /* 밑줄 없음 */
+  color:#363636;
 }
-
-input{
-  outline: none;
-}
-
+input{outline: none;}
 
 /* 3. 서브페이지에 들어갈 공통 UI구성요소의 서식 */
-.no_title{
-  display:none;
-}
-
-/* 버튼, input, nav .... */
+.no_title{display:none;}

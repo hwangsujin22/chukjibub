@@ -9,35 +9,38 @@
   <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입) -->
   <link href="./css/common.css" rel="stylesheet" type="text/css">
   <!-- 3. 레이아웃 서식 -->
-  <link href="./css/index_pc.css" rel="stylesheet" type="text/css">
-  <!-- 4. 메인, 서브, 로그인, 회원가입 페이지 서식 -->
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/index.css" rel="stylesheet" type="text/css">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- 파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/w3xeawBW.ico">
 </head>
 <body>
   <!-- 상단 헤더 영역 시작 -->
   <header>
     <div class="h_inner">
       <div class="h_top">
-        <h1><a href="index_pc.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="로고"></a></h1>
+        <h1><a href="index.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="로고"></a></h1>
         <ul class="lnb">
-          <li><a href="login_pc.html" title="로그인">로그인</a></li>
-          <li><a href="join_pc.html" title="회원가입">회원가입</a></li>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="join.html" title="회원가입">회원가입</a></li>
         </ul>
       </div> <!-- 글로벌 내비게이션 시작 -->
       <div class="nav_wrap">
         <nav class="h_bottom">
           <ul class="gnb">
-            <li><a href="sub_info_pc.html" title="소개하기">소개하기</a></li>
-            <li><a href="sub_locationseoul_pc.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
+            <li><a href="sub_info.html" title="소개하기">소개하기</a></li>
+            <li><a href="sub_locationseoul.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
               <ul class="sub">
-                <li><a href="sub_locationseoul_pc.html" title="지역별">지역별</a></li>
-                <li><a href="sub_date_pc.html" title="날짜별">날짜별</a></li>
+                <li><a href="sub_locationseoul.html" title="지역별">지역별</a></li>
+                <li><a href="sub_date.html" title="날짜별">날짜별</a></li>
               </ul>
             </li>
-            <li><a href="sub_taste_pc.html" title="2배로 즐기기">2배로 즐기기</a>
+            <li><a href="sub_taste.html" title="2배로 즐기기">2배로 즐기기</a>
               <ul class="sub">
-                <li><a href="sub_taste_pc.html" title="맛집">맛집</a></li>
-                <li><a href="sub_travel_pc.html" title="주변관광">주변관광</a></li>
+                <li><a href="sub_taste.html" title="맛집">맛집</a></li>
+                <li><a href="sub_travel.html" title="주변관광">주변관광</a></li>
               </ul>
             </li>
             <li><a href="javascript:void(0);" title="테마">테마</a>
@@ -52,7 +55,7 @@
                 <li><a href="javascript:void(0);" title="특산물">특산물</a></li>
               </ul>
             </li>
-            <li><a href="notice_pc.html" title="공지사항">공지사항</a></li>
+            <li><a href="notice.html" title="공지사항">공지사항</a></li>
           </ul>
         </nav>
       </div>
@@ -60,39 +63,76 @@
   </header>
   <form name="검색폼" method="post" action="send.php">
     <!-- 메인 영역 시작 -->
-    <main> <!-- 첫번째 레이아웃(불꽃) -->
+    <main> 
+      <!-- 첫번째 메인 배너 -->
       <div class="m_banner01">
         <img src="./images/banner_sticker.png" alt="배너 디자인">
-        <div class="slide"><img src="./images/banner.png" alt="배너 이미지"></div>
-        <p><span class="txt_point">축</span>제 <span class="txt_point">지</span>역을 즐기는 <span class="txt_point">법</span><br>
-          <span class="small_txt">어떤 축제를 즐기시겠습니까?</span></p>
+        <p>
+          <span class="txt_point">축</span>제 <span class="txt_point">지</span>역을 즐기는 <span class="txt_point">법</span>
+          <br>
+          <span class="small_txt" data-text="어떤 축제를 즐기시겠습니까?">어떤 축제를 즐기시겠습니까?</span>
+        </p>
+
         <div class="search_box">
           <input type="text" maxlength="16"><input type="image" src="./images/search_btn.png" alt="검색버튼">
         </div>
+
         <img src="./images/scroll_down.png" alt="아래로">
+
       </div>
       
       <!-- 두번째 레이아웃(어떤걸 즐길까) -->
       <div class="m_banner02">
         <article>
-          <h2>어떤걸 즐길까?<img src="./images/layout02_emj.png" alt="달리는 이모티콘" class="h2_img"></h2>
+          <h2>어떤걸 즐길까?</h2>
 
           <ul class="con02_map">
-            
-            <li class="m_intro">
-              <input type="radio" name="map" id="intro" checked>
-              <img src="./images/banner02_intro.png" alt="원하는 지역을 클릭"></li>
             <li class="m01">
-              <input type="radio" name="map" id="seoul">
-              <dl>                
-                <dt>서울 축제 알아보기</dt>
-                <dd><a href="sub_locationseoul_pc.html" title="서울"><img src="./images/seoul_festa.png" alt="서울 축제"></a></dd>
+              <input type="radio" name="map" id="seoul" checked>
+              <dl>
+                <dt><a href="sub_locationseoul.html" title="서울 축제">서울 축제 <i class="fa fa-plus"></i></a></dt>
+                <dd>
+                  <a href="javascript:;" title="서울 축제">
+                    <img src="./images/seoul_festa01.jpg" alt="경복궁 축제">
+                    <div class="festa_info">
+                      <p>경복궁</p>
+                      <p>&#x0023; 한복 입고 단풍 축제 가자</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="서울 축제">
+                    <img src="./images/seoul_festa04.jpg" alt="서울 축제">
+                    <div class="festa_info">
+                      <p>궁중문화축전</p>
+                      <p>&#x0023; 사계절 다른 느낌의 문화유산 축제</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="서울 축제">
+                    <img src="./images/seoul_festa02.JPG" alt="서울 축제">
+                    <div class="festa_info">
+                      <p>남산 타워</p>
+                      <p>&#x0023; 봄 나들이와 야경을 한번에 &#x0021;</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="서울 축제">
+                    <img src="./images/seoul_festa03.jpg" alt="서울 축제">
+                    <div class="festa_info">
+                      <p>위너브라더스</p>
+                      <p>&#x0023; 100주년 대규모 특별전</p>
+                    </div>
+                  </a>
+                </dd>
               </dl>
                 
               <input type="radio" name="map" id="incheon">
               <dl>
                 <dt>인천 축제 알아보기</dt>
-                <dd><a href="sub_locationincheon_pc.html" title="인천"><img src="./images/incheon_festa.png" alt="인천 축제"></a></dd>
+                <dd><a href="sub_locationincheon.html" title="인천"><img src="./images/incheon_festa.png" alt="인천 축제"></a></dd>
               </dl>
 
               <input type="radio" name="map" id="gyeonggi">
@@ -199,7 +239,6 @@
             </li>
 
             <li class="m02"><img src="./images/banner02_map.png" alt="지도">
-              
               <label for="seoul" class="btn btn01">서울</label>
               <label for="incheon" class="btn02">인천</label>
               <label for="gyeonggi" class="btn btn03">경기</label>
@@ -230,8 +269,8 @@
           <h2>근처에 뭐 있나?</h2>
         </article>
         <ul class="fav">
-          <li><a href="sub_travel_pc.html" title="주변관광으로 바로가기"><img src="./images/banner03_img01.png" alt=""><span class="caption">관광</span></a></li>
-          <li><a href="sub_taste_pc.html" title="맛집으로 바로가기"><img src="./images/banner03_img02.png" alt=""><span class="caption">맛집</span></a></li>
+          <li><a href="sub_travel.html" title="주변관광으로 바로가기"><img src="./images/banner03_img01.png" alt=""><span class="caption">관광</span></a></li>
+          <li><a href="sub_taste.html" title="맛집으로 바로가기"><img src="./images/banner03_img02.png" alt=""><span class="caption">맛집</span></a></li>
         </ul>
       </div>
       <!-- top버튼 영역  -->

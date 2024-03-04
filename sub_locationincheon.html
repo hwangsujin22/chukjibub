@@ -9,18 +9,19 @@
   <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입) -->
   <link href="./css/common.css" rel="stylesheet" type="text/css">
   <!-- 3. 레이아웃 서식 -->
-  <link href="./css/sub_locationseoul_pc_layout.css" rel="stylesheet" type="text/css">
+  <link href="./css/sub_locationincheon_layout.css" rel="stylesheet" type="text/css">
   <!-- 4. 메인, 서브, 로그인, 회원가입 페이지 서식 -->
   <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <!-- 상단 헤더 영역 시작 -->
-
+  <form name="검색폼" method="post" action="send.php">
     <header>
       <div class="h_inner">
-      <div class="h_top">
-        <h1><a href="./index_pc.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
+        <div class="h_top">
+          <h1><a href="./index.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
         <section class="search">
+          <h2 class="none_head">none</h2>
           <div class="search_box">
             <fieldset>
               <input type="text" name="search" maxlength="30" placeholder="검색">
@@ -29,24 +30,25 @@
           </div>
         </section>
         <ul class="lnb">
-          <li><a href="./login_pc.html" title="로그인">로그인</a></li>
-          <li><a href="./join_pc.html" title="회원가입">회원가입</a></li>
+          <li><a href="./login.html" title="로그인">로그인</a></li>
+          <li><a href="./join.html" title="회원가입">회원가입</a></li>
         </ul>
-      </div> <!-- 글로벌 내비게이션 시작 -->
+      </div>
+      <!-- 글로벌 내비게이션 시작 -->
       <div class="nav_wrap">
         <nav class="h_bottom">
           <ul class="gnb">
-            <li><a href="./sub_info_pc.html" title="소개하기">소개하기</a></li>
-            <li><a href="sub_locationseoul_pc.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
+            <li><a href="./sub_info.html" title="소개하기">소개하기</a></li>
+            <li><a href="./sub_locationseoul.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
               <ul class="sub">
-                <li><a href="./sub_locationseoul_pc.html" title="지역별">지역별</a></li>
-                <li><a href="./sub_date_pc.html" title="날짜별">날짜별</a></li>
+                <li><a href="./sub_locationseoul.html" title="지역별">지역별</a></li>
+                <li><a href="./sub_date.html" title="날짜별">날짜별</a></li>
               </ul>
             </li>
             <li><a href="#" title="2배로 즐기기">2배로 즐기기</a>
               <ul class="sub">
-                <li><a href="./sub_taste_pc.html" title="맛집">맛집</a></li>
-                <li><a href="./sub_travel_pc.html" title="주변관광">주변관광</a></li>
+                <li><a href="./sub_taste.html" title="맛집">맛집</a></li>
+                <li><a href="./sub_travel.html" title="주변관광">주변관광</a></li>
               </ul>
             </li>
             <li><a href="#" title="테마">테마</a>
@@ -61,14 +63,15 @@
                 <li><a href="#" title="특산물">특산물</a></li>
               </ul>
             </li>
-            <li><a href="./notice_pc.html" title="공지사항">공지사항</a></li>
+            <li><a href="./notice.html" title="공지사항">공지사항</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-
-
+</form>
+      
+  
   <!-- 메인 영역 시작 -->
   <main>
     <article class="slide">
@@ -79,94 +82,94 @@
           <h2 class="none_head">none</h2>
           <div class="back_line">
             <ul>
-            <li class="c_btn"><a href="./sub_locationseoul_pc.html" title="서울">서울</a></li>
-            <li><a href="./sub_locationincheon_pc.html" title="인천">인천</a></li>
-            <li><a href="#" title="대전">대전</a></li>
-            <li><a href="#" title="세종">세종</a></li>
-            <li><a href="#" title="광주">광주</a></li>
-            <li><a href="#" title="대구">대구</a></li>
-            <li><a href="#" title="울산">울산</a></li>
-            <li><a href="#" title="부산">부산</a></li>
-            <li><a href="#" title="경기">경기</a></li>
-            <li><a href="#" title="강원">강원</a></li>
-            <li><a href="#" title="경북">경북</a></li>
-            <li><a href="#" title="경남">경남</a></li>
-            <li><a href="#" title="전북">전북</a></li>
-            <li><a href="#" title="전남">전남</a></li>
-            <li><a href="#" title="충북">충북</a></li>
-            <li><a href="#" title="충남">충남</a></li>
-            <li><a href="#" title="제주">제주</a></li>
-          </ul>
-          <section class="pre_v">
-            <div>
-              <a href="#" title="한국의집">
+              <li><a href="./sub_locationseoul.html" title="서울">서울</a></li>
+              <li><a href="./sub_locationincheon.html" title="인천">인천</a></li>
+              <li><a href="#" title="대전">대전</a></li>
+              <li><a href="#" title="세종">세종</a></li>
+              <li><a href="#" title="광주">광주</a></li>
+              <li><a href="#" title="대구">대구</a></li>
+              <li><a href="#" title="울산">울산</a></li>
+              <li><a href="#" title="부산">부산</a></li>
+              <li><a href="#" title="경기">경기</a></li>
+              <li><a href="#" title="강원">강원</a></li>
+              <li><a href="#" title="경북">경북</a></li>
+              <li><a href="#" title="경남">경남</a></li>
+              <li><a href="#" title="전북">전북</a></li>
+              <li><a href="#" title="전남">전남</a></li>
+              <li><a href="#" title="충북">충북</a></li>
+              <li><a href="#" title="충남">충남</a></li>
+              <li><a href="#" title="제주">제주</a></li>
+            </ul>
+            <section class="pre_v">
+              <div>
+                <a href="#" title="달빛가득 부평향교">
               <span class="img">
-                <img src="./images/seoul/hangookui_jib.png" alt="한국의집_이미지">
+                <img src="./images/incheon/main_slice/inc_slice_img01.png" alt="달빛가득 부평향교">
               </span>
               <div class="text">
-                <h3>한국의집</h3>
-                <p>프리미엄 궁중다과를 봄,여름,</p>
-                  <p>가을,겨울 시즌별로...</p>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="#" title="서울에서 만나는 세계여행">
-                <span class="img">
-                  <img src="./images/seoul/seoul_wolrd_fastival.png" alt="서울에서 만나는_세계여행_이미지">
-                </span>
-                <div class="text">
-                  <h3>서울에서 만나는 세계여행</h3>
-                  <p>외국인과 함께 다양한 해외문화 </p>
-                  <p>교류활동을 경험할 수 있다.</p>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="#" title="강동 북 페스티벌">
+                <h3>달빛가득 부평향교</h3>
+                <p>보름달이 가득 차오른 밤 부평</p>
+                <p>향교를 함께  거닐며 포토존...</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#" title="송월동 동화마을 코스튬">
               <span class="img">
-                <img src="./images/seoul/gangdong_book_fastival.png" alt="강동 북 페스티벌_이미지">
+                <img src="./images/incheon/main_slice/inc_slice_img02.png" alt="송월동 동화마을 코스튬">
               </span>
-                <div class="text">
-                  <h3>강동 북 페스티벌</h3>
-                  <p>인공지는 시대에 사람과 사람</p>
-                  <p>그리고 사람과 책의 소통을...</p>
-                </div>
-              </a>
-            </div>
-            <div>
-            <a href="#" title="양재플라워페스타">
+              <div class="text">
+                <h3>송월동 동화마을 코스튬</h3>
+                <p>어린이들과 함께 만들어 나가는</p>
+                <p>인천 중구의 대표적인 어린이...</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#" title="빛의 정원, 송도">
               <span class="img">
-                  <img src="./images/seoul/yangjea_flower_fastival.png" alt="양재플라워 페스타_이미지">
-                </span>
-                <div class="text">
-                  <h3>양재플라워페스타</h3>
-                  <p>꽃과 함께 하는 일상생활 활성화</p>
-                  <p>그리고 꽃과 식물을 통해 힐링..</p>
+                <img src="./images/incheon/main_slice/inc_slice_img03.png" alt="빛의 정원, 송도">
+              </span>
+              <div class="text">
+                <h3>빛의 정원, 송도</h3>
+                <p>야간관광 특화도시 이천이 야간</p>
+                <p>관광활성화를 위해 개최하는...</p>
                 </div>
               </a>
             </div>
             <div>
-              <a href="#" title="노원달빛산책">
+              <a href="#" title="동인천 낭만축제">
                 <span class="img">
-                  <img src="./images/seoul/nowon_dalbitsancheak.png" alt="노원달빛산책_이미지">
+                  <img src="./images/incheon/main_slice/inc_slice_img04.png" alt="동인천 낭만축제">
                 </span>
                 <div class="text">
-                  <h3>노원달빛산책</h3>
-                  <p>2020년부터 시작해 올해로</p>
-                  <p>4회를 맞이하는 노원의 대표...</p>
+                  <h3>동인천 낭만축제</h3>
+                  <p>과거 인천 최대의 명소였던</p>
+                  <p>동인천의 번성했던 모습을...</p>
                 </div>
               </a>
             </div>
             <div>
-              <a href="#" title="양재아트살롱">
+              <a href="#" title="청라 뮤직&와인 페스티벌">
                 <span class="img">
-                  <img src="./images/seoul/yangjea_artsalong.png" alt="양재아트살롱_이미지">
+                  <img src="./images/incheon/main_slice/inc_slice_img05.png" alt="청라 뮤직&와인 페스티벌">
                 </span>
                 <div class="text">
-                  <h3>양재아트살롱</h3>
-                  <p>매주 금, 토요일마다</p>
-                  <p>만나는 양재천 프리마켓</p>
+                  <h3>청라 뮤직&와인 페스티벌 </h3>
+                  <p>프랑스를 메인 테마로 프랑스</p>
+                  <p>와인 존과 함께 샹송공연과...</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" title="삼랑성역사문화축제">
+                <span class="img">
+                  <img src="./images/incheon/main_slice/inc_slice_img06.png" alt="삼랑성역사문화축제">
+                </span>
+                <div class="text">
+                  <h3>삼랑성역사문화축제</h3>
+                  <p>전등사를 둘러싼 삼랑성은</p>
+                  <p>외적의 침입을 막기위해서 단군...</p>
                 </div>
               </a>
             </div>
@@ -178,7 +181,6 @@
         <div class="page_box">
           <img src="./images/page_navigation.png" alt="페이지_내비게이션">
           <strong>01</strong>
-          /
           <span>10</span>
         </div>
     </article>
@@ -186,14 +188,13 @@
         <div class="top_btn_box">
           <a href="#" title="top버튼" class="top_btn"><span><img src="./images/top_btn.png" alt="top버튼"></span></a>
         </div>
-      
-            <!-- 메인 콘텐츠 영역 -->
-            <article class="main_c">
-              <h2 class="none_head">none</h2>
-            <section>
-              <h2 class="none_head">none</h2>
+    <!-- 메인 콘텐츠 영역 -->
+    <article class="main_c">
+      <h2 class="none_head">none</h2>
+      <section>
+        <h2 class="none_head">none</h2>
               <div>
-                <img src="./images/seoul/seoul_main_img.png" alt="지역대표이미지">
+                <img src="./images/incheon/incheon_main_img.png" alt="인천대표이미지">
               </div>
             </section>
             <div class="button">
@@ -230,78 +231,78 @@
               </div>
               <!--메인콘텐츠 행사 항목 -->
             <section class="main_c_list">
-              <h2 class="none_head">none</h2>
-                <div class="left">
-                  <a href="#" title="한국의집 고호재">
-                    <img src="./images/seoul/main_c01.png" alt="한국의집_이미지">
+                <div>
+                  <a href="#" title="부평향교">
+                    <img src="./images/incheon/main_content/main_c01.png" alt="부평향교">
                     <div class="main_c_text_box">
-                      <h3>한국의 집 고호재</h3>
-                      <p>2023.10.24~2023.11.30</p>
-                      <p>서울 중구</p>
+                      <h3>달빛가득 부평향교</h3>
+                      <p>2023.10.27~2023.10.27</p>
+                      <p>인천 계양구</p>
                     </div>
                   </a>
                 </div>
                 
                 <div>
-                  <a href="#" title="K-푸드페스타 in 서울">
-                    <img src="./images/seoul/main_c02.png" alt="푸드페스타">
+                  <a href="#" title="송월동 동화마을 코스튬">
+                    <img src="./images/incheon/main_content/main_c02.png" alt="송월동 동화마을 코스튬">
                     <div>
-                      <h3>K-푸드페스타 in 서울</h3>
-                      <p>2023.11.10~2023.11.12</p>
-                      <p>서울 서초구</p>
+                      <h3>송월동 동화마을 코스튬</h3>
+                      <p>2023.10.28~2023.10.29</p>
+                      <p>인천 중구</p>
                     </div>
                   </a>
                 </div>
           
                 <div>
-                  <a href="#" title="명동맥주페스티벌">
-                    <img src="./images/seoul/main_c03.png" alt="명동맥주페스티벌">
+                  <a href="#" title="빛의 정원, 송도">
+                    <img src="./images/incheon/main_content/main_c03.png" alt="빛의 정원, 송도">
                     <div>
-                      <h3>명동맥주페스티벌</h3>
-                      <p>2023.10.06~2023.10.08</p>
-                      <p>서울 중구</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="left">
-                  <a href="#" title="한성백제문화제">
-                    <img src="./images/seoul/main_c04.png" alt="한성백제문화제">
-                    <div>
-                      <h3>한성백제문화제</h3>
-                      <p>2023.09.22~2023.09.24</p>
-                      <p>서울 송파구</p>
+                      <h3>빛의 정원, 송도</h3>
+                      <p>2023.10.07~2023.10.28</p>
+                      <p>인천 연수구</p>
                     </div>
                   </a>
                 </div>
                 <div>
-                  <a href="#" title="경복궁 별빛야행">
-                    <img src="./images/seoul/main_c05.png" alt="경복궁 별빛야행">
+                  <a href="#" title="동인천 낭만축제">
+                    <img src="./images/incheon/main_content/main_c04.png" alt="동인천 낭만축제">
                     <div>
-                    <h3>경복궁 별빛야행</h3>
-                    <p>2023.09.08~2023.10.08</p>
-                    <p>서울 종로구</p>
+                      <h3>동인천 낭만축제</h3>
+                      <p>2023.10.14~2023.10.15</p>
+                      <p>인천 동구</p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" title="청라뮤직&와인 페스티벌">
+                    <img src="./images/incheon/main_content/main_c05.png" alt="청라뮤직&와인 페스티벌">
+                    <div>
+                    <h3>청라뮤직&와인 페스티벌</h3>
+                    <p>2023.10.14~2023.10.15</p>
+                    <p>인천 서구</p>
                     </div>
                   </a>
                 </div>
               
                 <div>
-                  <a href="#" title="페띠앙&로제 오">
-                    <img src="./images/seoul/main_c06.png" alt="떼띠앙&로제 오">
+                  <a href="#" title="삼랑성역사문화축제">
+                    <img src="./images/incheon/main_content/main_c06.png" alt="삼랑성역사문화축제">
                     <div>
-                      <h3>페띠앙&#x0026;로제 오</h3>
-                      <p>2023.07.08~2023.07.08</p>
-                      <p>서울 성동구</p>
+                      <h3>삼랑성역사문화축제</h3>
+                      <p>2023.10.14~2023.10.15</p>
+                      <p>인천 강화군 </p>
                     </div>
                   </a>
                 </div>
             </section>
-            <section class="more_v_b">
-              <h2 class="none_head">none</h2>
-              <div>
+
+              <div class="more_v_b">
+                <h2 class="none_head">none</h2>
                 <a href="#" title="더보기 버튼">더보기 <img src="./images/icon_v.png" alt="더보기 버튼"></a>
               </div>
-            </section>
+
           </article>
+      
   </main>
 
   <!-- 하단 푸터 영역 시작 -->
