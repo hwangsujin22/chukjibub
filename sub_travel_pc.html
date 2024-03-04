@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주변관광_sub </title>
+  <!-- 1. 여백 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입) -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃 서식 -->
+  <link href="./css/sub_travel_pc_layout.css" rel="stylesheet" type="text/css">
+  <!-- 4. 메인, 서브, 로그인, 회원가입 페이지 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- 상단 헤더 영역 시작 -->
+  <form name="검색폼" method="post" action="send.php">
+    <header>
+      <div class="h_inner">
+      <div class="h_top">
+        <h1><a href="./index_pc.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
+        <section class="search">
+          <h2 class="none_head">none</h2>
+          <div class="search_box">
+            <fieldset>
+              <input type="text" name="search" maxlength="30" placeholder="검색">
+              <button type="submit" class="btn_search"><img src="./images/search.png" alt="검색버튼"></button>
+            </fieldset>
+          </div>
+        </section>
+        <ul class="lnb">
+          <li><a href="./login_pc.html" title="로그인">로그인</a></li>
+          <li><a href="./join_pc.html" title="회원가입">회원가입</a></li>
+        </ul>
+      </div>
+      <!-- 글로벌 내비게이션 시작 -->
+      <div class="nav_wrap">
+        <nav class="h_bottom">
+          <ul class="gnb">
+            <li><a href="./sub_info_pc.html" title="소개하기">소개하기</a></li>
+            <li><a href="./sub_locationseoul_pc.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
+              <ul class="sub">
+                <li><a href="./sub_locationseoul_pc.html" title="지역별">지역별</a></li>
+                <li><a href="./sub_date_pc.html" title="날짜별">날짜별</a></li>
+              </ul>
+            </li>
+            <li><a href="./sub_taste_pc.html" title="2배로 즐기기">2배로 즐기기</a>
+              <ul class="sub">
+                <li><a href="./sub_taste_pc.html" title="맛집">맛집</a></li>
+                <li><a href="./sub_travel_pc.html" title="주변관광">주변관광</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="테마">테마</a>
+              <ul class="sub">
+                <li><a href="#" title="가족">가족</a></li>
+                <li><a href="#" title="친구">친구</a></li>
+                <li><a href="#" title="계절">계절</a></li>
+                <li><a href="#" title="민속/전통">민속/전통</a></li>
+                <li><a href="#" title="스포츠/레져">스포츠/레져</a></li>
+                <li><a href="#" title="교육/체험">교육/체험</a></li>
+                <li><a href="#" title="공연전시/행사">공연전시/행사</a></li>
+                <li><a href="#" title="특산물">특산물</a></li>
+              </ul>
+            </li>
+            <li><a href="./notice_pc.html" title="공지사항">공지사항</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</form>
+
+  <!-- 메인 영역 시작 -->
+  <main>
+    <article class="slide">
+      <h2 class="none_head">none</h2>
+      <p class="page_loca">2배로 즐기기 > 주변관광</p>
+      <section class="main_content">
+        <div>
+          <h2>주변관광</h2>
+        </div>
+        <div class="main_top_img">
+          <img src="./images/travel/main_c_img.png" alt="메인이미지">
+        </div>
+        <div class="content_box">
+          <h3>서울</h3>
+          <select name="location02" id="location02" class="control_box02">
+            <option value="">시/군/구</option>
+            <option value="">종로구</option>
+            <option value="">중구</option>
+            <option value="">용산구</option>
+            <option value="">도봉구</option>
+            <option value="">강북구</option>
+            <option value="">성북구</option>
+            <option value="">노원구</option>
+            <option value="">동대문구</option>
+            <option value="">중량구</option>
+            <option value="">성동구</option>
+            <option value="">광진구</option>
+            <option value="">강동구</option>
+            <option value="">송파구</option>
+            <option value="">서초구</option>
+            <option value="">강남구</option>
+            <option value="">동작구</option>
+            <option value="">관악구</option>
+            <option value="">금천구</option>
+            <option value="">강서구</option>
+            <option value="">양천구</option>
+            <option value="">영등포구</option>
+            <option value="">구로구</option>
+            <option value="">은평구</option>
+            <option value="">마포구</option>
+            <option value="">서대문구</option>
+          </select>
+          <select name="location01" id="location01" class="control_box01">
+            <option value="">지역별</option>
+            <option value="">서울</option>
+            <option value="">인천</option>
+            <option value="">대전</option>
+            <option value="">세종</option>
+            <option value="">광주</option>
+            <option value="">대구</option>
+            <option value="">울산</option>
+            <option value="">부산</option>
+            <option value="">경기</option>
+            <option value="">강원</option>
+            <option value="">경북</option>
+            <option value="">경남</option>
+            <option value="">전북</option>
+            <option value="">전남</option>
+            <option value="">충북</option>
+            <option value="">충남</option>
+            <option value="">제주</option>
+          </select>
+        </div>
+            <section class="main_conlist01">
+              <div>
+                <a href="#" title="국립고궁박물관">
+                  <img src="./images/travel/list_img01.png" alt="대표이미지1">
+                </a>
+                  <div>
+                    <h3>국립고궁박물관</h3>
+                    <p>서울 종로구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle01">
+                  <label for="toggle01" class="favariate01">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="창경궁 흥화문">
+                  <img src="./images/travel/list_img02.png" alt="대표이미지2">
+                </a>
+                  <div>
+                    <h3>창경궁 흥화문</h3>
+                    <p>서울 종로구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle02">
+                  <label for="toggle02" class="favariate02">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="서울상상나라">
+                  <img src="./images/travel/list_img03.png" alt="대표이미지3">
+                </a>
+                  <div>
+                    <h3>서울상상나라</h3>
+                    <p>서울 광진구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle03">
+                  <label for="toggle03" class="favariate03">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="돈의문박물관">
+                  <img src="./images/travel/list_img04.png" alt="대표이미지4">
+                </a>
+                  <div>
+                    <h3>돈의문박물관</h3>
+                    <p>서울 종로구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle04">
+                  <label for="toggle04" class="favariate04">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="남산골한옥마을">
+                  <img src="./images/travel/list_img05.png" alt="대표이미지5">
+                </a>
+                  <div>
+                    <h3>남산골한옥마을</h3>
+                    <p>서울 중구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle05">
+                  <label for="toggle05" class="favariate05">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="한강뚝섬지구">
+                  <img src="./images/travel/list_img06.png" alt="대표이미지6">
+                </a>
+                  <div>
+                    <h3>한강 뚝섬지구</h3>
+                    <p>서울 광진구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle06">
+                  <label for="toggle06" class="favariate06">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="태릉.강릉">
+                  <img src="./images/travel/list_img07.png" alt="대표이미지7">
+                </a>
+                  <div>
+                    <h3>태릉.강릉</h3>
+                    <p>서울 노원구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle07">
+                  <label for="toggle07" class="favariate07">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="참만나">
+                  <img src="./images/travel/list_img08.png" alt="대표이미지8">
+                </a>
+                  <div>
+                    <h3>청계천</h3>
+                    <p>서울 중구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle08">
+                  <label for="toggle08" class="favariate08">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="낙원">
+                  <img src="./images/travel/list_img09.png" alt="대표이미지7">
+                </a>
+                  <div>
+                    <h3>경동시장</h3>
+                    <p>서울 중구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle09">
+                  <label for="toggle09" class="favariate09">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="태조대림감자탕">
+                  <img src="./images/travel/list_img10.png" alt="대표이미지7">
+                </a>
+                  <div>
+                    <h3>다올랭갤러리</h3>
+                    <p>서울 용산구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle10">
+                  <label for="toggle10" class="favariate10">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="서울한방진흥센터">
+                  <img src="./images/travel/list_img11.png" alt="대표이미지7">
+                </a>
+                  <div>
+                    <h3>서울한방진흥센터</h3>
+                    <p>서울 동대문구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle11">
+                  <label for="toggle11" class="favariate11">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              <div>
+                <a href="#" title="그라운드시소 서촌">
+                  <img src="./images/travel/list_img12.png" alt="대표이미지7">
+                </a>
+                  <div>
+                    <h3>그라운드시소 서촌</h3>
+                    <p>서울 종로구</p>
+                    <p><span><img src="./images/star_score.png" alt="별점"></span>875</p>
+                  </div>
+                  <input type="checkbox" id="toggle12">
+                  <label for="toggle12" class="favariate12">찜하기</label>
+                  <a href="#" title="지도" class="map_btn"><img src="./images/map.png" alt="지도"></a>
+              </div>
+              </section>
+        <section class="more_v_b">
+          <h2 class="none_head">none</h2>
+          <div>
+            <a href="#" title="더보기 버튼">더보기 <img src="./images/icon_v.png" alt="더보기 버튼"></a>
+          </div>
+        </section>
+      </section>
+    </article>
+  </main>
+  
+  <!-- 하단 푸터 영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+          </ul>
+        </nav>
+        
+        <div class="c_info">
+          <ul>
+            <li class="info01">회사명 : 축지법</li>
+            <li class="info02">대표자 : 홍길동</li>
+            <li class="info03">대표번호 :1234-5678</li>
+            <li class="info04">주소 : 서울특별시 종로구 수표로 96 국일관 드림팰리스 2층</li>
+            <!-- <li class="info05">5</li> -->
+            <!-- <li class="info06">6</li> -->
+            <li class="info07">사업자등록번호 : 000-00-00000</li>
+            <!-- <li class="info08">8</li> -->
+            <!-- <li class="info09">9</li> -->
+          </ul>
+        </div>
+      </div>
+      
+      <div class="sns_btn">
+        <ul>
+          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+        </ul>
+      </div>
+      <!-- top버튼 영역  -->
+        <div class="top_btn_box">
+          <a href="#" title="top버튼" class="top_btn"><span><img src="./images/top_btn.png" alt="top버튼"></span></a>
+        </div>
+      
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>축지법 - 메인</title>
+  <!-- 1. 여백 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입) -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃 서식 -->
+  <link href="./css/index_pc.css" rel="stylesheet" type="text/css">
+  <!-- 4. 메인, 서브, 로그인, 회원가입 페이지 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- 상단 헤더 영역 시작 -->
+  <header>
+    <div class="h_inner">
+      <div class="h_top">
+        <h1><a href="index_pc.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="로고"></a></h1>
+        <ul class="lnb">
+          <li><a href="login_pc.html" title="로그인">로그인</a></li>
+          <li><a href="join_pc.html" title="회원가입">회원가입</a></li>
+        </ul>
+      </div> <!-- 글로벌 내비게이션 시작 -->
+      <div class="nav_wrap">
+        <nav class="h_bottom">
+          <ul class="gnb">
+            <li><a href="sub_info_pc.html" title="소개하기">소개하기</a></li>
+            <li><a href="sub_locationseoul_pc.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
+              <ul class="sub">
+                <li><a href="sub_locationseoul_pc.html" title="지역별">지역별</a></li>
+                <li><a href="sub_date_pc.html" title="날짜별">날짜별</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_taste_pc.html" title="2배로 즐기기">2배로 즐기기</a>
+              <ul class="sub">
+                <li><a href="sub_taste_pc.html" title="맛집">맛집</a></li>
+                <li><a href="sub_travel_pc.html" title="주변관광">주변관광</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:void(0);" title="테마">테마</a>
+              <ul class="sub">
+                <li><a href="javascript:void(0);" title="가족">가족</a></li>
+                <li><a href="javascript:void(0);" title="친구">친구</a></li>
+                <li><a href="javascript:void(0);" title="계절">계절</a></li>
+                <li><a href="javascript:void(0);" title="민속/전통">민속/전통</a></li>
+                <li><a href="javascript:void(0);" title="스포츠/레져">스포츠/레져</a></li>
+                <li><a href="javascript:void(0);" title="교육/체험">교육/체험</a></li>
+                <li><a href="javascript:void(0);" title="공연전시/행사">공연전시/행사</a></li>
+                <li><a href="javascript:void(0);" title="특산물">특산물</a></li>
+              </ul>
+            </li>
+            <li><a href="notice_pc.html" title="공지사항">공지사항</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <form name="검색폼" method="post" action="send.php">
+    <!-- 메인 영역 시작 -->
+    <main> <!-- 첫번째 레이아웃(불꽃) -->
+      <div class="m_banner01">
+        <img src="./images/banner_sticker.png" alt="배너 디자인">
+        <div class="slide"><img src="./images/banner.png" alt="배너 이미지"></div>
+        <p><span class="txt_point">축</span>제 <span class="txt_point">지</span>역을 즐기는 <span class="txt_point">법</span><br>
+          <span class="small_txt">어떤 축제를 즐기시겠습니까?</span></p>
+        <div class="search_box">
+          <input type="text" maxlength="16"><input type="image" src="./images/search_btn.png" alt="검색버튼">
+        </div>
+        <img src="./images/scroll_down.png" alt="아래로">
+      </div>
+      
+      <!-- 두번째 레이아웃(어떤걸 즐길까) -->
+      <div class="m_banner02">
+        <article>
+          <h2>어떤걸 즐길까?<img src="./images/layout02_emj.png" alt="달리는 이모티콘" class="h2_img"></h2>
+
+          <ul class="con02_map">
+            
+            <li class="m_intro">
+              <input type="radio" name="map" id="intro" checked>
+              <img src="./images/banner02_intro.png" alt="원하는 지역을 클릭"></li>
+            <li class="m01">
+              <input type="radio" name="map" id="seoul">
+              <dl>                
+                <dt>서울 축제 알아보기</dt>
+                <dd><a href="sub_locationseoul_pc.html" title="서울"><img src="./images/seoul_festa.png" alt="서울 축제"></a></dd>
+              </dl>
+                
+              <input type="radio" name="map" id="incheon">
+              <dl>
+                <dt>인천 축제 알아보기</dt>
+                <dd><a href="sub_locationincheon_pc.html" title="인천"><img src="./images/incheon_festa.png" alt="인천 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="gyeonggi">
+              <dl>
+                <dt>경기 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="경기"><img src="./images/ready.png" alt="경기도 축제"></a></dd>
+              </dl>
+                
+              <input type="radio" name="map" id="kangwon">
+              <dl>
+                <dt>강원도 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="강원"><img src="./images/ready.png" alt="강원도 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="chungnam">
+              <dl>
+                <dt>충남 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="충남"><img src="./images/ready.png" alt="충남 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="chungbuk">
+              <dl>
+                <dt>충북 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="충북"><img src="./images/ready.png" alt="충북 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="sejong">
+              <dl>
+                <dt>세종 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="세종"><img src="./images/ready.png" alt="세종 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="daejeon">
+              <dl>
+                <dt>대전 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="대전"><img src="./images/ready.png" alt="대전 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="gyeongbuk">
+              <dl>
+                <dt>경북 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="경북"><img src="./images/ready.png" alt="경북 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="gyeongnam">
+              <dl>
+                <dt>경남 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="경남"><img src="./images/ready.png" alt="경남 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="daegu">
+              <dl>
+                <dt>대구 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="대구"><img src="./images/ready.png" alt="대구 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="ulsan">
+              <dl>
+                <dt>울산 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="울산"><img src="./images/ready.png" alt="울산 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="busan">
+              <dl>
+                <dt>부산 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="부산"><img src="./images/ready.png" alt="부산 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="jeonnam">
+              <dl>
+                <dt>전남 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="전남"><img src="./images/ready.png" alt="전남 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="jeonbuk">
+              <dl>
+                <dt>전북 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="전북"><img src="./images/ready.png" alt="전북 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="gwangju">
+              <dl>
+                <dt>광주 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="광주"><img src="./images/ready.png" alt="광주 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="jeju">
+              <dl>
+                <dt>제주 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="제주"><img src="./images/ready.png" alt="제주 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="ulleung">
+              <dl>
+                <dt>울릉도 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="울릉도"><img src="./images/ready.png" alt="울릉도 축제"></a></dd>
+              </dl>
+
+              <input type="radio" name="map" id="dokdo">
+              <dl>
+                <dt>독도 축제 알아보기</dt>
+                <dd><a href="javascript:void(0);" title="독도"><img src="./images/ready.png" alt="독도 축제"></a></dd>
+              </dl>
+            </li>
+
+            <li class="m02"><img src="./images/banner02_map.png" alt="지도">
+              
+              <label for="seoul" class="btn btn01">서울</label>
+              <label for="incheon" class="btn02">인천</label>
+              <label for="gyeonggi" class="btn btn03">경기</label>
+              <label for="kangwon" class="btn btn04">강원</label>
+              <label for="chungnam" class="btn btn05">충남</label>
+              <label for="chungbuk" class="btn btn06">충북</label>
+              <label for="sejong" class="btn07">세종</label>
+              <label for="daejeon" class="btn btn08">대전</label>
+              <label for="gyeongbuk" class="btn btn09">경북</label>
+              <label for="gyeongnam" class="btn btn10">경남</label>
+              <label for="daegu" class="btn btn11">대구</label>
+              <label for="ulsan" class="btn btn12">울산</label>
+              <label for="busan" class="btn13">부산</label>
+              <label for="jeonnam" class="btn btn14">전남</label>
+              <label for="jeonbuk" class="btn btn15">전북</label>
+              <label for="gwangju" class="btn btn16">광주</label>
+              <label for="jeju" class="btn btn17">제주</label>
+              <label for="ulleung" class="btn18">울릉도</label>
+              <label for="dokdo" class="btn19">독도</label>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- 세번째 레이아웃(근처에 뭐있나) -->
+      <div class="m_banner03">
+        <article>
+          <h2>근처에 뭐 있나?</h2>
+        </article>
+        <ul class="fav">
+          <li><a href="sub_travel_pc.html" title="주변관광으로 바로가기"><img src="./images/banner03_img01.png" alt=""><span class="caption">관광</span></a></li>
+          <li><a href="sub_taste_pc.html" title="맛집으로 바로가기"><img src="./images/banner03_img02.png" alt=""><span class="caption">맛집</span></a></li>
+        </ul>
+      </div>
+      <!-- top버튼 영역  -->
+      <div class="top_btn_box">
+        <a href="#" title="top버튼" class="top_btn"><span><img src="./images/top_btn.png" alt="top버튼"></span></a>
+      </div>
+    </main>
+  </form>
+  <!-- 하단 푸터 영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+          </ul>
+        </nav>
+
+        <div class="c_info">
+          <ul>
+            <li class="info01">회사명 : 축지법</li>
+            <li class="info02">대표자 : 홍길동</li>
+            <li class="info03">대표번호 :1234-5678</li>
+            <li class="info04">주소 : 서울특별시 종로구 수표로 96 국일관 드림팰리스 2층</li>
+            <!-- <li class="info05">5</li> -->
+            <!-- <li class="info06">6</li> -->
+            <li class="info07">사업자등록번호 : 000-00-00000</li>
+            <!-- <li class="info08">8</li> -->
+            <!-- <li class="info09">9</li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="sns_btn">
+        <ul>
+          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  
+</body>
+</html>
