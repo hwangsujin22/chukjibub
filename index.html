@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- 파비콘 이미지 삽입하기 -->
   <link rel="shortcut icon" type="image/x-icon" href="./images/w3xeawBW.ico">
+  <!-- 자바스크립트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="./script/main.js"></script>
 </head>
 <body>
   <!-- 상단 헤더 영역 시작 -->
@@ -76,16 +79,25 @@
         <div class="search_box">
           <input type="text" maxlength="16"><input type="image" src="./images/search_btn.png" alt="검색버튼">
         </div>
-
-        <img src="./images/scroll_down.png" alt="아래로">
-
+        <div>
+          <ul class="word">
+            <li>&#x0023;서울</li>
+            <li>&#x0023;EDM Festival</li>
+            <li>&#x0023;제주</li>
+            <li>&#x0023;맛집</li>
+            <li>&#x0023;친구랑</li>
+            <li>&#x0023;봄 축제</li>
+            <li>&#x0023;4월 축제</li>
+            <li>&#x0023;강원도</li>
+          </ul>
+        </div>
       </div>
       
       <!-- 두번째 레이아웃(어떤걸 즐길까) -->
       <div class="m_banner02">
         <article>
           <h2>어떤걸 즐길까?</h2>
-
+          <!-- <div class="bg_illust"><img src="./plan_illust.png" alt="계획일러스트"></div> -->
           <ul class="con02_map">
             <li class="m01">
               <input type="radio" name="map" id="seoul" checked>
@@ -105,7 +117,7 @@
                     <img src="./images/seoul_festa04.jpg" alt="서울 축제">
                     <div class="festa_info">
                       <p>궁중문화축전</p>
-                      <p>&#x0023; 사계절 다른 느낌의 문화유산 축제</p>
+                      <p>&#x0023; 사계절 느껴보자 문화유산 축제</p>
                     </div>
                   </a>
                 </dd>
@@ -131,8 +143,43 @@
                 
               <input type="radio" name="map" id="incheon">
               <dl>
-                <dt>인천 축제 알아보기</dt>
-                <dd><a href="sub_locationincheon.html" title="인천"><img src="./images/incheon_festa.png" alt="인천 축제"></a></dd>
+                <dt><a href="sub_locationincheon.html" title="인천 축제">인천 축제 <i class="fa fa-plus"></i></a></dt>
+                <dd>
+                  <a href="javascript:;" title="인천 축제">
+                    <img src="./images/incheon_festa01.jpg" alt="영화제">
+                    <div class="festa_info">
+                      <p>디아스포라 영화제</p>
+                      <p>&#x0023; 무료로 다같이 영화 보자</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="인천 축제">
+                    <img src="./images/incheon_festa02.jpg" alt="문화재 야행">
+                    <div class="festa_info">
+                      <p>인천개항장 문화재 야행</p>
+                      <p>&#x0023; 다양한 체험과 볼거리, 먹거리</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="인천 축제">
+                    <img src="./images/incheon_festa03.jpg" alt="INK 콘서트">
+                    <div class="festa_info">
+                      <p>INK 콘서트</p>
+                      <p>&#x0023; 인천 K-POP 콘서트 &#x0021;</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="인천 축제">
+                    <img src="./images/incheon_festa04.jpg" alt="낭만 시장">
+                    <div class="festa_info">
+                      <p>동인천 낭만시장</p>
+                      <p>&#x0023; 뉴트로 컨셉 축제의 장</p>
+                    </div>
+                  </a>
+                </dd>
               </dl>
 
               <input type="radio" name="map" id="gyeonggi">
@@ -143,8 +190,43 @@
                 
               <input type="radio" name="map" id="kangwon">
               <dl>
-                <dt>강원도 축제 알아보기</dt>
-                <dd><a href="javascript:void(0);" title="강원"><img src="./images/ready.png" alt="강원도 축제"></a></dd>
+                <dt><a href="javascript:;" title="강원도 축제">강원도 축제 <i class="fa fa-plus"></i></a></dt>
+                <dd>
+                  <a href="javascript:;" title="강원도 축제">
+                    <img src="./images/kangwon_festa01.jpeg" alt="소나타오브라이트">
+                    <div class="festa_info">
+                      <p>소나타오브라이트</p>
+                      <p>&#x0023; 원주 불빛 축제 </p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="강원도 축제">
+                    <img src="./images/kangwon_festa02.jpg" alt="춘천 마임 축제">
+                    <div class="festa_info">
+                      <p>춘천 마임 축제</p>
+                      <p>&#x0023; 공연예술 축제</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="강원도 축제">
+                    <img src="./images/kangwon_festa03.jpg" alt="정선 아리랑제">
+                    <div class="festa_info">
+                      <p>정선 아리랑제</p>
+                      <p>&#x0023; 민속 시연, 체험하자 &#x0021;</p>
+                    </div>
+                  </a>
+                </dd>
+                <dd>
+                  <a href="javascript:;" title="강원도 축제">
+                    <img src="./images/kangwon_festa04.jpg" alt="경포 벚꽃 축제">
+                    <div class="festa_info">
+                      <p>경포 벚꽃 축제</p>
+                      <p>&#x0023; 만개한 벚꽃과 봄 나들이</p>
+                    </div>
+                  </a>
+                </dd>
               </dl>
 
               <input type="radio" name="map" id="chungnam">
@@ -238,6 +320,7 @@
               </dl>
             </li>
 
+            <!-- 지도 -->
             <li class="m02"><img src="./images/banner02_map.png" alt="지도">
               <label for="seoul" class="btn btn01">서울</label>
               <label for="incheon" class="btn02">인천</label>
@@ -263,16 +346,39 @@
         </article>
       </div>
 
-      <!-- 세번째 레이아웃(근처에 뭐있나) -->
+      <!-- 세번째 레이아웃(취향대로) -->
       <div class="m_banner03">
         <article>
-          <h2>근처에 뭐 있나?</h2>
+          <h2>취향대로, 필요한대로 click!</h2>
+          <div class="with_food">
+            <a href="sub_taste.html" title="맛집">
+              <img src="./images/food_illust.png" alt="음식일러스트">
+              <p>
+                <span>핫플</span> 맛집만 콕콕<br>
+                축제와 <span>함께</span> 즐기자
+              </p>
+            </a>
+          </div>
+          <div class="with_place">
+            <a href="sub_travel.html" title="주변관광">
+              <img src="./images/travel_illust.png" alt="여행일러스트">
+              <p>
+                <span>꿩</span> 먹고 <span>알</span> 먹고<br>
+                주변 관광까지 <span>GO</span>
+              </p>
+            </a>
+          </div>
         </article>
-        <ul class="fav">
-          <li><a href="sub_travel.html" title="주변관광으로 바로가기"><img src="./images/banner03_img01.png" alt=""><span class="caption">관광</span></a></li>
-          <li><a href="sub_taste.html" title="맛집으로 바로가기"><img src="./images/banner03_img02.png" alt=""><span class="caption">맛집</span></a></li>
-        </ul>
       </div>
+
+      <!-- 네번째 레이아웃(테마 슬라이드) -->
+      <div class="m_banner04">
+        <article class="tema">
+          <h2>테마 슬라이드</h2>
+        </article>
+      </div>
+
+
       <!-- top버튼 영역  -->
       <div class="top_btn_box">
         <a href="#" title="top버튼" class="top_btn"><span><img src="./images/top_btn.png" alt="top버튼"></span></a>
