@@ -1,16 +1,18 @@
 // 외부 스크립트
 
-// 1. 검색박스 밑 랜덤 추천 단어
-// let n = 0;
-var list = ['&#x0023;서울', '&#x0023;EDM festival', '&#x0023;제주', '&#x0023;맛집', '&#x0023;친구랑', '&#x0023;봄 축제', '&#x0023;4월 축제', '&#x0023;강원도']
+$(document).ready(function(){
+  // 1. 검색박스 밑 추천 단어 슬라이드
+  $('.word_inner > ul > li:last-child').insertBefore('.word_inner > ul > li:first-child');
+  $('.word_inner > ul').css('margin-left','-122px');
+  function moveLeft(){
+    $('.word_inner > ul').animate({'margin-left':'-244px'},300,
+    function(){
+      $('.word_inner > ul > li:first-child').insertAfter('.word_inner > ul > li:last-child');
+      $('.word_inner > ul').css('margin-left','-122px');
+    });
+  }
+  let Timer = setInterval(moveLeft, 3000);
 
 
-
-
-// let ran_n = Math.floor(Math.random()*8);
-// let list_n = list[ran_n];
-
-// document.getElementById('banner_img').src="./images/"+list_n;
-
-
+});
 
