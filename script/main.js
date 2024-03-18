@@ -13,6 +13,24 @@ $(document).ready(function(){
   }
   let Timer = setInterval(moveLeft, 3000);
 
+  $('#gwangju').click(function(){
+    alert('준비된 축제가 없습니다.');
+    return false;
+  });
+  $('#ulsan').click(function(){
+    alert('준비된 축제가 없습니다.');
+    return false;
+  });
+  $('#ulleung').click(function(){
+    alert('준비된 축제가 없습니다.');
+    return false;
+  });
+  $('#dokdo').click(function(){
+    alert('준비된 축제가 없습니다.');
+    return false;
+  });
+
+
 
 });
 

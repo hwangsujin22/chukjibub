@@ -44,7 +44,7 @@ header{
 .gnb  > li{position:relative;}
 .gnb > li > a{padding:11px 30px;}
 .gnb > li > a:hover{
-  border-bottom:4px solid #fff;
+  border-bottom:4px solid #ff5207;
   transition:0.1s;
 }
 .sub{
@@ -57,8 +57,9 @@ header{
   color:#fff;
   font-size:15px;
   font-weight:500;
+  display:block;
 }
-.sub > li > a:hover{color:#ffbb02;}
+.sub > li > a:hover{color:#ff5207;}
 .h_bottom{
   width:100%; height:56px;
   font-size:18px;
@@ -177,11 +178,10 @@ main{
   width:78px;
   margin:0px 5px;
   padding:10px 20px;
-  background:#05429c;
+  background:#f5f695;
   border-radius:20px;
   text-align:center;
 }
-.word_inner > ul > li a{color:#fff;}
 
 /* 두번째 레이아웃 서식 */
 .m_banner02{
@@ -246,6 +246,7 @@ main{
   overflow:hidden;
 }
 .m01 > dl > dd > a > img{width:100%;}
+.m01 > .daejeon_list > dd{float:left !important;}
 
 .festa_info{
   width:250px; height:65px;
@@ -457,6 +458,11 @@ input[type=radio]{display:none;}
 .with_place{float:right;background:#d5ffc8;}
 
 /* 네번째 레이아웃 서식 */
+.tema > h2{display:none;}
+.tema{display:flex;}
+.tema > div{width:200px;height:400px;overflow:hidden;}
+.tema > div img{height:100%;}
+.tema 
 
 
 

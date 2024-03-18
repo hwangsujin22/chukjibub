@@ -97,7 +97,7 @@ fieldset{
   padding:11px 30px;
 }
 .gnb > li > a:hover{
-  border-bottom:4px solid #003cff;
+  border-bottom:4px solid #ff5207;
   transition:0.1s;
 }
 .sub{
@@ -117,7 +117,7 @@ fieldset{
 }
 
 .sub > li > a:hover{
-  color:#003cff;
+  color:#ff5207;
 }
 
 .h_bottom{
