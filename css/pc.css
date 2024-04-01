@@ -305,7 +305,6 @@ main{
 /* .con02_map li input[type=radio]:checked .btn{color:#fff;} */
 
 /* 지도 서식 */
-
 .m02{
   position:relative;
   transform:translateX(50px);
@@ -540,9 +539,7 @@ input[type=radio]{display:none;}
 .tema_info > p{line-height:30px; position:absolute; bottom:30px; left:20px;}
 
 /* 다섯번째 레이아웃 서식 */
-.m_banner05{
-  width:100%; height:360px;
-}
+.m_banner05{width:100%; height:360px;}
 .notice{display:flex;}
 .notice > h2{display:none;}
 .event_list{
@@ -583,10 +580,7 @@ input[type=radio]{display:none;}
 }
 
 /* top버튼에 적용할 서식 */
-.act{
-  opacity:1;
-  visibility:visible !important;
-}
+.act{opacity:1;visibility:visible !important;}
 
 /* 푸터서식 */
 footer{
@@ -594,29 +588,20 @@ footer{
   background:#363535;
   margin:0px auto;
 }
-
 .f_inner{
   height:150px;
   display:flex;
   justify-content:space-around;
 }
-.f_inner > h2{
-  padding-top:40px;
-}
+.f_inner > h2{padding-top:40px;}
 .f_inner nav > ul{
   width:500px;
   display:flex;
   font-size:14px;
   margin: 30px 0;
 }
-.f_inner nav > ul > li{
-  padding-right:80px;
-}
-.f_inner nav a{
-  color:#fff;
-  text-decoration:underline;
-}
-
+.f_inner nav > ul > li{padding-right:80px;}
+.f_inner nav a{color:#fff;text-decoration:underline;}
 .c_info > ul{
   width:500px;
   color:#fff;
@@ -625,13 +610,8 @@ footer{
   grid-template-columns:repeat(3, 167px);
   grid-template-rows:repeat(3, 15px);
 }
-.c_info .info04{
-  grid-area:2/1/3/5;
-}
-.c_info .info07{
-  grid-area:3/1/4/5;
-}
-
+.c_info .info04{grid-area:2/1/3/5;}
+.c_info .info07{grid-area:3/1/4/5;}
 .sns_btn > ul{
   padding-top:20px;
   width:180px;
