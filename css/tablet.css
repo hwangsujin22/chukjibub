@@ -45,6 +45,11 @@
   .word_inner > ul > li a{font-size:14px;}
   .word_inner > ul > li{width:75px;}
 
+  @media screen and (max-width:910px){
+    .m_banner01{height:500px;}
+    .search_box{top:62%;}
+    .word{bottom:22% !important;}
+  }
 
   /* 두번째 레이아웃 서식 */
   .m_banner02{margin-top:600px;height:820px;}
@@ -93,6 +98,9 @@
     .btn17{left:-10px; top:366px;}
     .btn18{left:182px; top:78px;}
     .btn19{left:210px; top:120px;}
+  }
+  @media screen and (max-width:910px) {
+    .m_banner02{margin-top:500px;}
   }
   @media screen and (max-width:890px) {
     .m_banner02{height:730px;}

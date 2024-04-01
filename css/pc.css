@@ -28,6 +28,7 @@ header{
   font-weight:500;
   color:#fff;
 }
+.lnb > li:first-child{display:none;}
 
 /* 메인 내비게이션 */
 .nav_wrap{
