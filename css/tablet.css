@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+  /* 헤더 서식 */
+  .h_top{width:100%;height:80px;}
+  .h_top > .lnb{right:40px;top:35px;}
+
+  /* 메인 내비게이션 */
+  .nav_wrap{overflow:visible;}
+  .nav_wrap:hover{height:56px;background:none;overflow:visible;}
+  .gnb > li:first-child{display:block;}
+  .gnb > li > a{padding:10px;font-size:16px;}
+  .gnb > li > a:hover{border-bottom:none;}
+  .sub{display:none;}
+  .sub > li > a:hover{color:#fff;}
+  .h_bottom > .gnb{width:100%;height:55px;justify-content:center;}
+  .h_bottom > .gnb > li:first-child{width:80px;}
+  .h_bottom > .gnb > li{width:160px;}
+  .h_bottom{width:100%;}
+
+  /* 메인 서식 */
+  div > article > h2{font-size:32px;}
+  .m_banner02, .m_banner03, .m_banner04, .m_banner05{padding:30px;}
+
+  main{padding-top:135px;}
+  .m_banner02 > article, .m_banner03, .m_banner03 > article, .con02_map, .h_top, .h_bottom > ul, .m_banner04 > .tema, .m_banner05 > .notice, .f_inner{width:100% !important;}
+  /* .m_banner02 > article > h2, .m_banner03 > article > h2, .m_banner04 > article > h2{
+    text-decoration:underline;
+    text-underline-offset:15px;
+  } */
+
+  /* 첫번째 레이아웃 서식 */
+  .m_banner01{top:135px;height:600px;background-position-y:30px;}
+  .m_banner01 > p{
+    font-weight:bold;
+    font-size:30px;
+  }
+  .txt_point{font-size:45px;}
+  .m_banner01 > img:first-child{width:400px;}
+  .small_txt{font-size:23px;}
+  .search_box{width:300px; height:36px;}
+  .search_box > input[type=image]{width:28px; height:28px;}
+  .word{width:505px;height:36px;}
+  .word_inner > ul > li a{font-size:14px;}
+  .word_inner > ul > li{width:75px;}
+
+
+  /* 두번째 레이아웃 서식 */
+  .m_banner02{margin-top:600px;height:820px;}
+  .m_banner02 > article > p{font-size:18px;}
+  .m_banner02 > article > p > i{font-size:23px;}
+  .con02_map > .m01{width:50%;}
+  .con02_map > .m02{width:48%;}
+  .m01 > dl{height:510px;}
+  .m01 > dl > dt{padding:13px 0px;font-size:18px;}
+  .m01 > dl > dt > a > i.fa{bottom:7px;border-radius:50%;background:#ff5207;color:#fff;}
+  .m01 > dl > dd{width:230px; height:238px;}
+  .festa_info{width:230px;}
+  .festa_info > p:last-child{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+
+  @media screen and (max-width:1020px) {
+    .m_banner02{height:780px;}
+    .con02_map{width:100%;height:570px;justify-content:space-between;}
+    .con02_map > .m01{width:440px;}
+    .con02_map > .m02{width:300px;transform:translateY(30px);margin-right:10%;}
+    .con02_map > .m02 img{width:100%;}
+    .m01 > dl{height:480px;}
+    .m01 > dl > dt{font-size:16px;}
+    .m01 > dl > dd{width:200px; height:218px;}
+    .m02 > label{font-size:12px;}
+    .festa_info{width:200px;}
+    .festa_info > p:first-child{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:16px;}
+    .festa_info > p:last-child{font-size:14px;}
+
+    /* 지도 버튼 서식 */
+    .btn01{left:38px;top:57px;}
+    .btn02{left:-10px;top:38px;}
+    .btn03{left:0px;top:20px;}
+    .btn04{left:50px; top:-4px;}
+    .btn05{left:-30px; top:110px;}
+    .btn06{left:40px; top:116px;}
+    .btn07{left:34px; top:160px;}
+    .btn08{left:62px; top:178px;}
+    .btn09{left:80px; top:100px;}
+    .btn10{left:60px; top:220px;}
+    .btn11{left:123px; top:210px;}
+    .btn12{left:178px; top:237px;}
+    .btn13{left:138px; top:252px;}
+    .btn14{left:-10px; top:240px;}
+    .btn15{left:-10px; top:210px;}
+    .btn16{left:18px; top:286px;}
+    .btn17{left:-10px; top:366px;}
+    .btn18{left:182px; top:78px;}
+    .btn19{left:210px; top:120px;}
+  }
+  @media screen and (max-width:890px) {
+    .m_banner02{height:730px;}
+    .con02_map > .m02{margin-right:6%;}
+    .m01 > dl{height:450px;}
+  }
+  @media screen and (max-width:830px) {
+    .con02_map > .m01{width:400px;}
+    .m01 > dl > dd{width:180px; height:210px;}
+    .festa_info{width:180px;}
+  }
+  
+  /* 지도 서식 */
+  .m02{transform:translateX(-10px);}
+  .m02 > label{transform:translateX(41px);}
+
+  /* 지도 버튼 서식 */
+  .btn:hover{color:#333;transform:translateX(41px);background:none;}
+  .btn02:hover, .btn07:hover, .btn13:hover, .btn18:hover, .btn19:hover{background:none;}
+
+  /* 세번째 레이아웃 서식 */
+  .m_banner03{height:460px;}
+  .m_banner03 > article{padding-top:70px;}
+  .m_banner03 > article p{font-size:22px;}
+  .m_banner03 > article > div{width:44%;}
+  .with_food > a > img{width:200px;padding:0px;}
+  .with_place > a > img{width:150px;padding:0px 20px;}
+  .with_place{margin-right:60px;}
+  @media screen and (max-width:905px) {
+    .m_banner03 > article > div{width:45%;}
+    .m_banner03 > article p{font-size:20px;}
+  }
+  @media screen and (max-width:855px) {
+    .m_banner03 > article p{font-size:18px;}
+    .with_food > a > img{width:180px;padding:14px 4px 0px 0px;}
+    .with_place > a > img{width:130px;padding-top:10px;}
+  }
+
+  /* 네번째 레이아웃 서식 */
+  .m_banner04{height:620px;}
+  .tema > p{font-size:18px;}
+  .tema_inner{
+    width:calc(100% - 80px);
+    padding:30px 10px;
+  }
+  .tema_inner > .tema_friend img{transform:translateX(-80px);}
+  .tema_inner > .tema_sports img{transform:translateX(-70px);}
+  .tema_inner > div > a{transition:none;}
+  .tema_inner > div > a:hover{width:200px;}
+  .tema_inner > div > a:hover > .tema_info{width:200px;}
+  .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
+  .tema_info{background:rgba(0,0,0,.4);transition:none;}
+  .tema_info > h3{
+    text-overflow:initial;
+    overflow:visible;
+    white-space:wrap;
+    font-size:22px;
+    line-height:30px;
+  }
+  .tema_info > p{font-size:14px;}
+
+  @media screen and (max-width:930px) {
+    .m_banner04{height:560px;}
+    .tema_inner > div > a{width:180px;height:250px;}
+    .tema_inner > div > a:hover{width:180px;}
+    .tema_inner > div > a:hover > .tema_info{width:180px;}
+    .tema_inner > div > a > .tema_info > h3{width:160px;font-size:17px;left:10px;}
+    .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
+    .tema_info > p{font-size:13px;left:10px;}
+  }
+  @media screen and (max-width:835px) {
+    .m_banner04{height:560px;}
+    .tema_inner > div > a{width:160px;height:250px;}
+    .tema_inner > div > a:hover{width:160px;}
+    .tema_inner > div > a:hover > .tema_info{width:160px;}
+    .tema_inner > div > a > .tema_info > h3{width:160px;left:3px;}
+    .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
+    .tema_info > p{left:3px;}
+  }
+
+  /* 다섯번째 레이아웃 서식 */
+  .m_banner05{height:330px;}
+  .notice_list{padding-right:60px;}
+  .notice_list > a{font-size:24px;}
+  .notice_list > ul > li > a{font-size:16px;}
+
+  /* top버튼 서식 */
+  .top_btn_box{right:60px;}
+
+
+
+  
+}

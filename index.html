@@ -8,13 +8,15 @@
   <link href="./css/reset.css" rel="stylesheet" type="text/css">
   <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입) -->
   <link href="./css/common.css" rel="stylesheet" type="text/css">
-  <!-- 3. 레이아웃 서식 -->
-  <link href="./css/index.css" rel="stylesheet" type="text/css">
-
+  <!-- 4. 기본(PC) 서식 -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+  <!-- 5. TABLET 서식 -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+  <!-- 6. MOBILE 서식 -->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
   <!-- 폰트어썸 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- 파비콘 이미지 삽입하기 -->
-  <link rel="shortcut icon" type="image/x-icon" href="./images/w3xeawBW.ico">
+
   <!-- 제이쿼리 라이브러리 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   <script src="./script/main.js"></script>
@@ -26,6 +28,7 @@
       <div class="h_top">
         <h1><a href="index.html" title="메인으로 바로가기"><img src="./images/logo.png" alt="로고"></a></h1>
         <ul class="lnb">
+          <li><a href="javascript:;" title="전체보기" id="m_toggle"><i class="fas fa-bars"></i></a></li>
           <li><a href="login.html" title="로그인">로그인</a></li>
           <li><a href="join.html" title="회원가입">회원가입</a></li>
         </ul>
@@ -33,6 +36,7 @@
       <div class="nav_wrap">
         <nav class="h_bottom">
           <ul class="gnb">
+            <li><a href="javascript:;" title="전체보기" id="toggle"><i class="fas fa-bars"></i></a></li>
             <li><a href="sub_info.html" title="소개하기">소개하기</a></li>
             <li><a href="sub_locationseoul.html" title="어떤걸즐길까?">어떤걸즐길까?</a>
               <ul class="sub">
@@ -62,6 +66,38 @@
           </ul>
         </nav>
       </div>
+    </div>
+    <div class="sub_back"></div>
+    <div class="m_gnb_wrap">
+      <ul class="m_gnb">
+        <li><a href="javascript:;" title="닫기" class="c_btn"><i class="fas fa-times"></i></a></li>
+        <li><a href="sub_info.html" title="소개하기">소개하기</a></li>
+        <li><a href="javascript:;" title="어떤걸즐길까?">어떤걸즐길까? <i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="sub_locationseoul.html" title="지역별">지역별</a></li>
+            <li><a href="sub_date.html" title="날짜별">날짜별</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:;" title="2배로 즐기기">2배로 즐기기 <i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="sub_taste.html" title="맛집">맛집</a></li>
+            <li><a href="sub_travel.html" title="주변관광">주변관광</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);" title="테마">테마 <i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="javascript:void(0);" title="가족">가족</a></li>
+            <li><a href="javascript:void(0);" title="친구">친구</a></li>
+            <li><a href="javascript:void(0);" title="계절">계절</a></li>
+            <li><a href="javascript:void(0);" title="민속/전통">민속/전통</a></li>
+            <li><a href="javascript:void(0);" title="스포츠/레져">스포츠/레져</a></li>
+            <li><a href="javascript:void(0);" title="교육/체험">교육/체험</a></li>
+            <li><a href="javascript:void(0);" title="공연전시/행사">공연전시/행사</a></li>
+            <li><a href="javascript:void(0);" title="특산물">특산물</a></li>
+          </ul>
+        </li>
+        <li><a href="notice.html" title="공지사항">공지사항</a></li>
+      </ul>
     </div>
   </header>
   <form name="검색폼" method="post" action="send.php">
@@ -99,6 +135,7 @@
       <div class="m_banner02">
         <article>
           <h2>어떤걸 즐길까?</h2>
+          <p>지역의 특색이 담긴 축제부터&#x0021; 모두에게 핫한 페스티벌까지 한눈에 살펴보세요 <i class="far fa-smile"></i></p>
           <ul class="con02_map">
             <li class="m01">
               <input type="radio" name="map" id="seoul" checked>
@@ -713,7 +750,7 @@
       <!-- 세번째 레이아웃(취향대로) -->
       <div class="m_banner03">
         <article>
-          <h2>취향대로, 필요한대로 click!</h2>
+          <h2>즐거움을 2배로 click&#x0021;</h2>
           <div class="with_food">
             <a href="sub_taste.html" title="맛집">
               <img src="./images/food_illust.png" alt="음식일러스트">
@@ -738,37 +775,79 @@
       <!-- 네번째 레이아웃(테마 슬라이드) -->
       <div class="m_banner04">
         <article class="tema">
-          <h2>테마 슬라이드</h2>
-          <div class="tema_friend">
-            <a href="javascript:;" title="테마 친구">
-              <img src="./images/friend_festa.jpeg" alt="친구와 함께">
-              <p></p>
-            </a>
-          </div>
-          <div class="tema_family">
-            <a href="javascript:;" title="테마 가족">
-              <img src="./images/family_festa.jpeg" alt="가족과 함께">
-              <p></p>
-            </a>
-          </div>
-          <div class="tema_season">
-            <a href="javascript:;" title="테마 계절">
-              <img src="./images/winter_festa.jpeg" alt="계절별 축제">
-              <p></p>
-            </a>
-          </div>
-          <div class="tema_sports">
-            <a href="javascript:;" title="테마 스포츠/레져">
-              <img src="./images/sports_festa.jpg" alt="스포츠/레져">
-              <p></p>
-            </a>
+          <h2>테마가 담긴 축제</h2>
+          <p>함께하는 사람에 따라, 즐기고자 하는 것에 따라 다양하게 즐기자&#x0021;</p>
+          <div class="tema_inner">
+            <div class="tema_friend">
+              <a href="javascript:;" title="테마 친구">
+                <img src="./images/friend_festa.jpeg" alt="친구와 함께">
+                <div class="tema_info">
+                  <h3>친구와 함께하는 축제</h3>
+                  <p>테마 &#x003E; 친구</p>
+                </div>
+              </a>
+            </div>
+            <div class="tema_family">
+              <a href="javascript:;" title="테마 가족">
+                <img src="./images/family_festa.jpeg" alt="가족과 함께">
+                <div class="tema_info">
+                  <h3>가족과 함께하는 축제</h3>
+                  <p>테마 &#x003E; 가족</p>
+                </div>
+              </a>
+            </div>
+            <div class="tema_season">
+              <a href="javascript:;" title="테마 계절">
+                <img src="./images/winter_festa.jpeg" alt="계절별 축제">
+                <div class="tema_info">
+                  <h3>계절별 색 다른 축제</h3>
+                  <p>테마 &#x003E; 계절</p>
+                </div>
+              </a>
+            </div>
+            <div class="tema_sports">
+              <a href="javascript:;" title="테마 스포츠/레져">
+                <img src="./images/sports_festa.jpg" alt="스포츠/레져">
+                <div class="tema_info">
+                  <h3>익스트림하게 즐기자&#x0021;</h3>
+                  <p>테마 &#x003E; 스포츠/레져</p>
+                </div>
+              </a>
+            </div>
           </div>
         </article>
       </div>
 
+      <!-- 다섯번째 레이아웃(공지사항) -->
       <div class="m_banner05">
         <article class="notice">
           <h2>공지사항</h2>
+          <div class="event_list">
+            <div class="list01">
+              <a href="javascript:;" title="고객 의견 추첨 이벤트">
+                <img src="./images/notice_01.jpg" alt="고객 의견 추첨 이벤트">
+              </a>
+            </div>
+            <div class="list02">
+              <a href="javascript:;" title="여행상품 기획 이벤트">
+                <img src="./images/notice_02.jpg" alt="여행상품 기획 이벤트">
+              </a>
+            </div>
+            <div class="list03">
+              <a href="javascript:;" title="라쿠텐 드라이브 할인 이벤트">
+                <img src="./images/notice_03.jpg" alt="라쿠텐 드라이브 할인 이벤트">
+              </a>
+            </div>
+          </div>
+          <div class="notice_list">
+            <a href="notice.html" title="공지사항">공지사항 <i class="fa fa-plus"></i></a>
+            <ul>
+              <li><a href="javascript:;" title=""><span>울산 고래축제</span> 일정 연기</a></li>
+              <li><a href="javascript:;" title=""><span>대전 효문화 뿌리축제</span> 자원봉사자 모집</a></li>
+              <li><a href="javascript:;" title=""><span>세계 거리 춤 축제</span> 참가신청 안내</a></li>
+              <li><a href="javascript:;" title=""><span>축지법</span> 사이트 시스템 점검</a></li>
+            </ul>
+          </div>
         </article>
       </div>
 
