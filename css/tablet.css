@@ -114,8 +114,8 @@
   .m02 > label{transform:translateX(41px);}
 
   /* 지도 버튼 서식 */
-  .btn:hover{color:#333;transform:translateX(41px);background:none;}
-  .btn02:hover, .btn07:hover, .btn13:hover, .btn18:hover, .btn19:hover{background:none;}
+  /* .btn:hover{color:#333;transform:translateX(41px);background:none;}
+  .btn02:hover, .btn07:hover, .btn13:hover, .btn18:hover, .btn19:hover{background:none;} */
 
   /* 세번째 레이아웃 서식 */
   .m_banner03{height:460px;}

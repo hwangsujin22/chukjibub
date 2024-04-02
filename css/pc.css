@@ -327,8 +327,11 @@ main{
   width:36px; height:33px;
   z-index:120;
 }
+@media (hover: hover) {
+  .btn01:hover{background:url('../images/map_seoul.png');}
+}
 .btn:hover{color:#fff;transform:translateX(25px);}
-.btn01:hover{background:url('../images/map_seoul.png');}
+
 
 .btn02{
   left:60px; top:64px;
