@@ -135,6 +135,7 @@
     .m01 > dl{width:100%; height:556px;}
     .m01 > dl > dt{bottom:-20px;}
     .m01 > dl > dd{width:230px; height:238px;;}
+    .m01 > dl:nth-of-type(6) > dt, .m01 > dl:nth-of-type(7) > dt, .m01 > dl:nth-of-type(8) > dt, .m01 > dl:nth-last-of-type(6) > dt{transform:translate(-100px, -258px);}
     .festa_info{width:230px;}
     
     .con02_map > .m02 > img{display:none;}
@@ -142,10 +143,18 @@
       order:1;
       display:flex;flex-wrap:wrap;
       justify-content:center;
-      transform:translateY(30px);
-      margin:0px auto;width:500px;
+      transform:translateY(40px);
+      margin:0px auto;width:90%;
     }
-    .m02 > label{position:relative;transform:translate(0px,0px);font-size:0.9rem;}
+    .m02 > label{
+      position:relative;
+      transform:translate(0px,0px);
+      font-size:0.9rem;
+      border-radius:20px;
+      border:1px solid #ff5207;
+      margin:2px; padding:0px 2px;
+    }
+    .act{background:#ff5207;color:#fff;}
     .btn01, .btn02, .btn03, .btn04,.btn05,.btn06,.btn07,.btn08,.btn09,.btn10,.btn11,.btn12,.btn13,.btn14,.btn15,.btn16,.btn17,.btn18,.btn19{line-height:30px;top:0px;left:0px;width:50px;height:30px;}
     .btn:hover{color:#333;transform:translate(0px,0px);background:none;}
     .btn02:hover, .btn07:hover, .btn13:hover, .btn18:hover, .btn19:hover{background:none;transform:translate(0px,0px);}

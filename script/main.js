@@ -72,36 +72,17 @@ $(document).ready(function(){
   });
 
   // 지도 클릭시 배경화면 지정
-  // let m_btn01 = $('.btn01');
-  // let m_btn02 = $('.btn02');
-  // let m_btn03 = $('.btn03');
-  // let m_btn04 = $('.btn04');
-  // let m_btn05 = $('.btn05');
-  // let m_btn06 = $('.btn06');
-  // let m_btn07 = $('.btn07');
-  // let m_btn08 = $('.btn08');
-  // let m_btn09 = $('.btn09');
-  // let m_btn10 = $('.btn10');
-  // let m_btn11 = $('.btn11');
-  // let m_btn12 = $('.btn12');
-  // let m_btn13 = $('.btn13');
-  // let m_btn14 = $('.btn14');
-  // let m_btn15 = $('.btn15');
-  // let m_btn16 = $('.btn16');
-  // let m_btn17 = $('.btn17');
-  // let m_btn18 = $('.btn18');
-  // let m_btn19 = $('.btn19');
-  // let m_btn = $('.btn');
-  // m_btn.click(function(){
-  //   $(this).siblings().css('background','none').css('color','#333');
-  //   $(this).css('background','#f00');
-  //   $(this).css('color','#fff');
-  //   $(this).css('border-radius','20px');
-  // });
-  // m_btn01.click(function(){
-  //   $(this).css('background','#f00');
-  //   $(this).css('color','#fff');
-  // });
+  let m_btn02 = $('.btn02');
+  let m_btn07 = $('.btn07');
+  let m_btn13 = $('.btn13');
+  let m_btn18 = $('.btn18');
+  let m_btn19 = $('.btn19');
+  let m_btn = $('.btn');
+  m_btn.click(function(){
+    $(this).siblings().removeClass('act');
+    $(this).addClass('act');
+  });
+
 
   // top버튼 스크롤 위치에 따라 보이기/숨기기----------------------------------
   let scrollPos;
