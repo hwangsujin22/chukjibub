@@ -208,9 +208,9 @@
   }
 
   /* 세번째 레이아웃 서식 */
-  .m_banner03{height:400px;padding:10px;}
+  .m_banner03{height:400px;}
   .m_banner03 > article{padding-top:40px;}
-  .m_banner03 > article > h2{padding-bottom:60px;}
+  .m_banner03 > article > h2{padding-bottom:60px;padding-left:10px;}
   .m_banner03 > article p{font-size:1.1rem;padding-top:50px;}
   .m_banner03 > article > div{width:47%;height:178px;}
   .with_food > a > img{width:160px;padding:10px 4px;}
@@ -235,11 +235,11 @@
   }
 
   /* 네번째 레이아웃 서식 */
-  .m_banner04{height:530px;padding:10px;}
-  .tema > h2{top:40px;}
-  .tema > p{font-size:1.1rem;top:100px;}
+  .m_banner04{height:530px;}
+  .tema > h2{top:40px;padding-left:10px;}
+  .tema > p{font-size:1.1rem;top:100px;padding-left:10px;}
   .tema_inner{
-    width:calc(100% - 60px);
+    width:92%;
     padding:20px 10px;
     margin:0px auto;
     transform:translateY(150px);
@@ -287,7 +287,7 @@
   }
   @media screen and (max-width:454px){
     .m_banner04{height:870px;}
-    .tema_inner{width:calc(100% - 40px);}
+    .tema_inner{width:85%;}
     .tema_inner > div{width:88%;height:150px;}
     .tema_inner > div img{width:100%;height:auto;transform:translateY(-30px);}
     .tema_inner > .tema_friend img, .tema_inner > .tema_sports img{transform:translate(0px, -30px);}
@@ -299,7 +299,7 @@
   }
 
   /* 다섯번째 레이아웃 서식 */
-  .m_banner05{height:330px;padding:10px;}
+  .m_banner05{height:330px;}
   .notice_list > a{font-size:1.4rem;}
   .notice_list > a > i.fa{transform:translateY(12px);}
   .notice_list > ul > li > a{
