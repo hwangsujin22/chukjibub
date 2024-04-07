@@ -238,8 +238,8 @@
   .tema > h2{top:40px;}
   .tema > p{font-size:1.1rem;top:100px;}
   .tema_inner{
-    width:calc(100% - 80px);
-    padding:30px 10px;
+    width:calc(100% - 60px);
+    padding:20px 10px;
     margin:0px auto;
     transform:translateY(150px);
   }
@@ -299,7 +299,6 @@
 
   /* 다섯번째 레이아웃 서식 */
   .m_banner05{height:330px;}
-  .notice_list{padding-right:30px;}
   .notice_list > a{font-size:1.4rem;}
   .notice_list > a > i.fa{transform:translateY(12px);}
   .notice_list > ul > li > a{
