@@ -286,7 +286,7 @@
   }
   @media screen and (max-width:454px){
     .m_banner04{height:870px;}
-    .tema_inner{width:100%;}
+    .tema_inner{width:calc(100% - 40px);}
     .tema_inner > div{width:88%;height:150px;}
     .tema_inner > div img{width:100%;height:auto;transform:translateY(-30px);}
     .tema_inner > .tema_friend img, .tema_inner > .tema_sports img{transform:translate(0px, -30px);}
