@@ -113,10 +113,6 @@
   .m02{transform:translateX(-10px);}
   .m02 > label{transform:translateX(41px);}
 
-  /* 지도 버튼 서식 */
-  /* .btn:hover{color:#333;transform:translateX(41px);background:none;}
-  .btn02:hover, .btn07:hover, .btn13:hover, .btn18:hover, .btn19:hover{background:none;} */
-
   /* 세번째 레이아웃 서식 */
   .m_banner03{height:460px;}
   .m_banner03 > article{padding-top:70px;}
@@ -145,9 +141,6 @@
   .tema_inner > .tema_friend img{transform:translateX(-80px);}
   .tema_inner > .tema_sports img{transform:translateX(-70px);}
   .tema_inner > div > a{transition:none;}
-  .tema_inner > div > a:hover{width:200px;}
-  .tema_inner > div > a:hover > .tema_info{width:200px;}
-  .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
   .tema_info{background:rgba(0,0,0,.4);transition:none;}
   .tema_info > h3{
     text-overflow:initial;
@@ -161,25 +154,18 @@
   @media screen and (max-width:930px) {
     .m_banner04{height:560px;}
     .tema_inner > div > a{width:180px;height:250px;}
-    .tema_inner > div > a:hover{width:180px;}
-    .tema_inner > div > a:hover > .tema_info{width:180px;}
     .tema_inner > div > a > .tema_info > h3{width:160px;font-size:17px;left:10px;}
-    .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
     .tema_info > p{font-size:13px;left:10px;}
   }
   @media screen and (max-width:835px) {
-    .m_banner04{height:560px;}
-    .tema_inner > div > a{width:160px;height:250px;}
-    .tema_inner > div > a:hover{width:160px;}
-    .tema_inner > div > a:hover > .tema_info{width:160px;}
-    .tema_inner > div > a > .tema_info > h3{width:160px;left:3px;}
-    .tema_inner > div > a:hover > .tema_info > h3{width:160px;}
+    .tema_inner > div > a{width:160px;}
+    .tema_inner > div > a > .tema_info > h3{left:3px;}
     .tema_info > p{left:3px;}
   }
 
   /* 다섯번째 레이아웃 서식 */
   .m_banner05{height:330px;}
-  .notice_list{padding-right:60px;}
+  .notice_list{padding-right:30px;}
   .notice_list > a{font-size:24px;}
   .notice_list > ul > li > a{font-size:16px;}
 

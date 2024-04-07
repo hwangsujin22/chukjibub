@@ -77,10 +77,10 @@ $(document).ready(function(){
   let m_btn13 = $('.btn13');
   let m_btn18 = $('.btn18');
   let m_btn19 = $('.btn19');
-  let m_btn = $('.btn');
+  let m_btn = $('.m_btn');
   m_btn.click(function(){
-    $(this).siblings().removeClass('act');
-    $(this).addClass('act');
+    $(this).siblings().removeClass('m_act');
+    $(this).addClass('m_act');
   });
 
 

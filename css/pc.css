@@ -242,6 +242,7 @@ main{
   font-size:20px;
   padding:20px 0px;
 }
+.m_banner02 > article > p > br{display:none;}
 .m_banner02 > article > p > i{color:#ff5207;font-size:25px;}
 .con02_map{
   height:600px;
@@ -272,11 +273,6 @@ main{
   right:15px;bottom:9px;
   padding:5px;
 }
-.m01 > dl > dt:hover > a > i.fa{
-  border-radius:50%;
-  background:#ff5207;
-  color:#fff;
-}
 .m01 > dl > dd{width:250px; height:258px; overflow:hidden;padding:10px 10px;}
 .m01 > dl > dd:first-of-type, .m01 > dl > dd:nth-of-type(3){float:left;}
 .m01 > dl > dd:nth-of-type(2), .m01 > dl > dd:last-of-type{float:right;}
@@ -302,9 +298,63 @@ main{
 .con02_map dl{display:none;}
 
 .con02_map li input[type=radio]:checked + dl{display:block;}
-/* .con02_map li input[type=radio]:checked .btn{color:#fff;} */
 
 /* 지도 서식 */
+@media screen and (min-width:1024px) {
+  /* PC 서식에서의 마우스오버 효과 */
+  /* 지도 */
+  .m01 > dl > dt:hover > a > i.fa{
+    border-radius:50%;
+    background:#ff5207;
+    color:#fff;
+  }
+  .btn:hover{color:#fff;transform:translateX(25px);}
+  .btn01:hover{background:url('../images/map_seoul.png');}
+  .btn02:hover{
+    background:url('../images/map_incheon.png')no-repeat;
+    background-position:29px 17px;
+  }
+  .btn03:hover{background:url('../images/map_gyeonggi.png');}
+  .btn04:hover{background:url('../images/map_kangwon.png');}
+  .btn05:hover{background:url('../images/map_chungnam.png');}
+  .btn06:hover{background:url('../images/map_chungbuk.png');}
+  .btn07:hover{
+    background:url('../images/map_sejong.png')no-repeat;
+    background-position:8px 0px;
+  }
+  .btn08:hover{background:url('../images/map_daejeon.png');}
+  .btn09:hover{background:url('../images/map_gyeongbuk.png');}
+  .btn10:hover{background:url('../images/map_gyeongnam.png');}
+  .btn11:hover{
+    background:url('../images/map_daegu.png')no-repeat;
+    background-position:-3px 0px;
+  }
+  .btn12:hover{
+    background:url('../images/map_ulsan.png')no-repeat;
+    background-position:-3px 0px;
+  }
+  .btn13:hover{background:url('../images/map_busan.png')no-repeat;}
+  .btn14:hover{background:url('../images/map_jeonnam.png')no-repeat;}
+  .btn15:hover{background:url('../images/map_jeonbuk.png');}
+  .btn16:hover{
+    background:url('../images/map_gwangju.png')no-repeat;
+    background-position:-1px 0px;
+  }
+  .btn17:hover{background:url('../images/map_jeju.png');}
+  .btn18:hover{
+    background:url('../images/map_ulleung.png')no-repeat;
+    background-position:15px 27px;
+  }
+  .btn19:hover{
+    background:url('../images/map_dokdo.png')no-repeat;
+    background-position:5px 0px;
+  }
+
+  /* 테마 */
+  .tema_inner > div > a:hover{width:310px;}
+  .tema_inner > div > a:hover > .tema_info{width:310px;background:rgba(0,0,0,.4);}
+  .tema_inner > div > a:hover > .tema_info > h3{width:310px;}
+}
 .m02{
   position:relative;
   transform:translateX(50px);
@@ -327,162 +377,98 @@ main{
   width:36px; height:33px;
   z-index:120;
 }
-@media (hover: hover) {
-  .btn01:hover{background:url('../images/map_seoul.png');}
-}
-.btn:hover{color:#fff;transform:translateX(25px);}
-
-
 .btn02{
   left:60px; top:64px;
   line-height:28px;
   width:52px; height:50px;
   z-index:100;
 }
-.btn02:hover{
-  background:url('../images/map_incheon.png')no-repeat;
-  background-position:29px 17px;
-}
-
 .btn03{
   left:62px; top:47px;
   width:123px; height:147px;
   line-height:170px;
 }
-.btn03:hover{background:url('../images/map_gyeonggi.png');}
-
 .btn04{
   left:156px; top:15px;
   width:153px; height:168px;
   line-height:168px;
 }
-.btn04:hover{background:url('../images/map_kangwon.png');}
-
 .btn05{
   left:38px; top:180px;
   width:122px; height:126px;
   line-height:126px;
 }
-.btn05:hover{background:url('../images/map_chungnam.png');}
-
 .btn06{
   left:138px; top:163px;
   width:109px; height:139px;
   line-height:70px;
 }
-.btn06:hover{background:url('../images/map_chungbuk.png');}
-
 .btn07{
   left:111px; top:224px;
   width:60px; height:29px;
   line-height:29px;
 }
-.btn07:hover{
-  background:url('../images/map_sejong.png')no-repeat;
-  background-position:8px 0px;
-}
-
 .btn08{
   left:129px; top:243px;
   width:28px; height:31px;
   line-height:33px;
 }
-.btn08:hover{background:url('../images/map_daejeon.png');}
-
 .btn09{
   left:184px; top:167px;
   width:147px; height:166px;
   line-height:160px;
 }
-.btn09:hover{background:url('../images/map_gyeongbuk.png');}
-
 .btn10{
   left:160px; top:312px;
   width:144px; height:99px;
   line-height:99px;
 }
-.btn10:hover{background:url('../images/map_gyeongnam.png');}
-
 .btn11{
   left:225px; top:286px;
   width:43px; height:40px;
   line-height:44px;
 }
-.btn11:hover{
-  background:url('../images/map_daegu.png')no-repeat;
-  background-position:-3px 0px;
-}
-
 .btn12{
   left:294px; top:322px;
   width:34px; height:29px;
   line-height:27px;
 }
-.btn12:hover{
-  background:url('../images/map_ulsan.png')no-repeat;
-  background-position:-3px 0px;
-}
-
 .btn13{
   left:272px; top:343px;
   width:100px; height:46px;
   line-height:46px;
 }
-.btn13:hover{background:url('../images/map_busan.png')no-repeat;}
-
 .btn14{
   left:39px; top:361px;
   width:148px; height:108px;
   line-height:115px;
 }
-.btn14:hover{background:url('../images/map_jeonnam.png')no-repeat;}
-
 .btn15{
   left:63px; top:287px;
   width:124px; height:90px;
   line-height:90px;
 }
-.btn15:hover{background:url('../images/map_jeonbuk.png');}
-
 .btn16{
   left:81px; top:384px;
   width:35px; height:22px;
   line-height:22px;
 }
-.btn16:hover{
-  background:url('../images/map_gwangju.png')no-repeat;
-  background-position:-1px 0px;
-}
-
 .btn17{
   left:50px; top:496px;
   width:64px; height:38px;
   line-height:38px;
 }
-.btn17:hover{background:url('../images/map_jeju.png');}
-
 .btn18{
   left:310px; top:120px;
   width:40px; height:40px;
   line-height:25px;
 }
-.btn18:hover{
-  background:url('../images/map_ulleung.png')no-repeat;
-  background-position:15px 27px;
-}
-
 .btn19{
   left:338px; top:155px;
   width:40px; height:20px;
   line-height:30px;
 }
-.btn19:hover{
-  background:url('../images/map_dokdo.png')no-repeat;
-  background-position:5px 0px;
-}
-
 input[type=radio]{display:none;}
-
 
 /* 세번째 레이아웃 서식 */
 .m_banner03{height:500px;}
@@ -508,6 +494,7 @@ input[type=radio]{display:none;}
 .tema{position:relative;}
 .tema > h2{position:absolute;top:60px;left:0px;}
 .tema > p{position:absolute;top:130px;left:0px;font-size:20px;}
+.tema > p > br{display:none;}
 .tema_inner{
   display:flex;justify-content:space-around;
   transform:translateY(180px);
@@ -522,9 +509,6 @@ input[type=radio]{display:none;}
   transition:0.5s;
   position:relative;
 }
-.tema_inner > div > a:hover{width:310px;}
-.tema_inner > div > a:hover > .tema_info{width:310px;background:rgba(0,0,0,.4);}
-.tema_inner > div > a:hover > .tema_info > h3{width:310px;}
 .tema_info{
   position:absolute;bottom:0px;left:0px;
   color:#fff;
@@ -546,15 +530,15 @@ input[type=radio]{display:none;}
 .notice{display:flex;}
 .notice > h2{display:none;}
 .event_list{
-  width:283px;height:195px;
+  width:323px;height:235px;
   position:relative;
-  padding:20px;
   border:2px solid #ff5207;
   border-radius:20px;
+
 }
 .event_list img{width:100%;}
 .event_list a{display:block;}
-.event_list > div{position:absolute;top:20px;left:20px;border-radius:14px;overflow:hidden;}
+.event_list > div{position:absolute;top:20px;left:16px;border-radius:14px;overflow:hidden;}
 .event_list > .list01{z-index:3;}
 .event_list > .list02{z-index:2;display:none;}
 .event_list > .list03{z-index:1;display:none;}
