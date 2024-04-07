@@ -23,7 +23,7 @@
   .m_banner02 > article, .m_banner03, .m_banner03 > article, .con02_map, .h_top, .h_bottom > ul, .m_banner04 > .tema, .m_banner05 > .notice, .f_inner{width:100% !important;}
 
   /* 첫번째 레이아웃 서식 */
-  .m_banner01{top:70px;height:500px;background-position-y:30px;}
+  .m_banner01{top:69px;height:500px;background-position-y:30px;}
   .m_banner01 > p{font-size:1.7rem;}
   .txt_point{font-size:2.8rem;}
   .m_banner01 > img:first-child{width:400px;}
@@ -76,7 +76,7 @@
   }
 
   /* 두번째 레이아웃 서식 */
-  .m_banner02{height:730px;margin-top:500px;}
+  .m_banner02{height:730px;margin-top:499px;}
   .m_banner02 > article{padding-top:30px;}
   .m_banner02 > article > p{font-size:1.1rem;}
   .m_banner02 > article > p > i{font-size:1.2rem;}
@@ -318,7 +318,7 @@
   }
 
   /* top버튼 서식 */
-  .top_btn_box{right:60px;}
+  .top_btn_box{right:30px;}
   
   /* 푸터 서식 */
   .f_inner{height:100%;justify-content:left;}
