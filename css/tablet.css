@@ -21,7 +21,6 @@
 
   /* 메인 서식 */
   div > article > h2{font-size:32px;}
-  .m_banner02, .m_banner03, .m_banner04, .m_banner05{padding:30px;}
 
   main{padding-top:135px;}
   .m_banner02 > article, .m_banner03, .m_banner03 > article, .con02_map, .h_top, .h_bottom > ul, .m_banner04 > .tema, .m_banner05 > .notice, .f_inner{width:100% !important;}
@@ -49,8 +48,10 @@
 
   /* 두번째 레이아웃 서식 */
   .m_banner02{margin-top:600px;height:820px;}
+  .m_banner02 > article > h2, .m_banner02 > article > p{padding-left:30px;}
   .m_banner02 > article > p{font-size:18px;}
   .m_banner02 > article > p > i{font-size:23px;}
+  .con02_map{padding:0px 30px;}
   .con02_map > .m01{width:50%;}
   .con02_map > .m02{width:48%;}
   .m01 > dl{height:510px;}
@@ -67,7 +68,7 @@
     .con02_map > .m02{width:300px;transform:translateY(30px);margin-right:10%;}
     .con02_map > .m02 img{width:100%;}
     .m01 > dl{height:480px;}
-    .m01 > dl > dt{font-size:16px;}
+    .m01 > dl > dt{font-size:16px;bottom:-65px;}
     .m01 > dl > dd{width:200px; height:218px;}
     .m02 > label{font-size:12px;}
     .festa_info{width:200px;}
@@ -99,12 +100,13 @@
     .m_banner02{margin-top:500px;}
   }
   @media screen and (max-width:890px) {
-    .m_banner02{height:730px;}
+    .m_banner02{height:750px;}
     .con02_map > .m02{margin-right:6%;}
-    .m01 > dl{height:450px;}
+    .m01 > dl{height:466px;}
   }
   @media screen and (max-width:830px) {
     .con02_map > .m01{width:400px;}
+    .m01 > dl{height:446px;}
     .m01 > dl > dd{width:180px; height:210px;}
     .festa_info{width:180px;}
   }
@@ -116,11 +118,13 @@
   /* 세번째 레이아웃 서식 */
   .m_banner03{height:460px;}
   .m_banner03 > article{padding-top:70px;}
+  .m_banner03 > article > h2{padding-left:30px;}
   .m_banner03 > article p{font-size:22px;}
   .m_banner03 > article > div{width:44%;}
+  .with_food {margin-left:30px;}
   .with_food > a > img{width:200px;padding:0px;}
   .with_place > a > img{width:150px;padding:0px 20px;}
-  .with_place{margin-right:60px;}
+  .with_place{margin-right:30px;}
   @media screen and (max-width:905px) {
     .m_banner03 > article > div{width:45%;}
     .m_banner03 > article p{font-size:20px;}
@@ -133,10 +137,12 @@
 
   /* 네번째 레이아웃 서식 */
   .m_banner04{height:620px;}
+  .tema > h2, .tema > p{padding-left:30px;}
   .tema > p{font-size:18px;}
   .tema_inner{
     width:calc(100% - 80px);
     padding:30px 10px;
+    margin:0px auto;
   }
   .tema_inner > .tema_friend img{transform:translateX(-80px);}
   .tema_inner > .tema_sports img{transform:translateX(-70px);}
@@ -165,7 +171,8 @@
 
   /* 다섯번째 레이아웃 서식 */
   .m_banner05{height:330px;}
-  .notice_list{padding-right:30px;}
+  .event_list{margin-left:30px;}
+  .notice_list{padding-right:30px;width:calc(100% - 437px);height:240px;}
   .notice_list > a{font-size:24px;}
   .notice_list > ul > li > a{font-size:16px;}
 

@@ -527,7 +527,7 @@ input[type=radio]{display:none;}
 
 /* 다섯번째 레이아웃 서식 */
 .m_banner05{width:100%; height:360px;}
-.notice{display:flex;}
+.notice{display:flex;justify-content:center;}
 .notice > h2{display:none;}
 .event_list{
   width:323px;height:235px;
