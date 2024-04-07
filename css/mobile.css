@@ -224,7 +224,7 @@
     .with_place > a > img{width:130px;padding:4px 35px;}
   }
   @media screen and (max-width:445px){
-    .m_banner03 > article > div{width:95%;margin:0px auto; margin-top:20px;margin-right:30px;}
+    .m_banner03 > article > div{width:95%;margin:0px auto; margin-top:20px;}
   }
   @media screen and (max-width:390px){
     .m_banner03{height:520px;}
