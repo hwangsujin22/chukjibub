@@ -2,7 +2,7 @@
 
 .search_box{
   width: 230px; height: 33px;
-  border:1px solid #d3dae6;
+  border:1px solid #363535;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;

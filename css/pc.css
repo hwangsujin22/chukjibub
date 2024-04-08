@@ -221,7 +221,7 @@ main{
   border-radius:20px;
   text-align:center;
 }
-.word_inner > ul > li a{font-weight:500;}
+.word_inner > ul > li a{font-weight:500;color:#000000;}
 
 /* 두번째 레이아웃 서식 */
 .m_banner02{
@@ -235,7 +235,6 @@ main{
 .m_banner02 > article > h2{
   float:left;
   padding:20px 0px;
-  color:#ff5207;
 }
 .m_banner02 > article > p{
   float:left;clear:left;
@@ -492,7 +491,7 @@ input[type=radio]{display:none;}
   background:linear-gradient(to top ,#fff 58%, #fce0de 42%);
 }
 .tema{position:relative;}
-.tema > h2{position:absolute;top:60px;left:0px;}
+.tema > h2{position:absolute;top:60px;left:0px;color:#ff5207;}
 .tema > p{position:absolute;top:130px;left:0px;font-size:20px;}
 .tema > p > br{display:none;}
 .tema_inner{
