@@ -8,7 +8,7 @@
 html{scroll-behavior:smooth;}
 /* 1. 글자모양, 크기, 색상 */
 body{
-  font-family:'Noto Serif Korean', 'Noto Sans KR', sans-serif;
+  font-family:'Noto Sans KR', Arial, sans-serif;
   color: #363636;
   overflow-x:hidden;
 }
