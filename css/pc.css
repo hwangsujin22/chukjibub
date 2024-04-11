@@ -43,17 +43,18 @@ header{
 .gnb > li{position:relative;}
 .gnb > li:first-child{display:none;}
 .gnb > li > a{padding:11px 30px;}
-.gnb > li > a:hover{
+.gnb > li:hover > a{
   border-bottom:4px solid #ff5207;
   transition:0.1s;
 }
-.sub{
+.sub, .t_sub{
   position:absolute;
   width:100%;
   padding-top:10px;
 }
-.sub > li{text-align:center;line-height:40px;}
-.sub > li > a{
+.t_sub{display:none;}
+.sub > li, .t_sub > li{text-align:center;line-height:40px;}
+.sub > li > a, .t_sub > li > a{
   color:#fff;
   font-size:15px;
   font-weight:500;
@@ -554,20 +555,6 @@ input[type=radio]{display:none;}
 .notice_list > ul > li:last-child{border-bottom:1px solid #d8d8d8;}
 .notice_list > ul > li > a{font-size:18px;}
 .notice_list > ul span{font-weight:500;color:#ff5207;padding-right:10px;}
-
-/* top버튼 서식 */
-.top_btn_box{
-  position:fixed;
-  right:100px;
-  bottom:50px;
-  opacity:0;
-  visibility:hidden;
-  transition:0.5s;
-  z-index:10;
-}
-
-/* top버튼에 적용할 서식 */
-.act{opacity:1;visibility:visible !important;}
 
 /* 푸터서식 */
 footer{

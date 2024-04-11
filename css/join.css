@@ -47,32 +47,33 @@
       margin-top: 5px;}
     .btn_1{
       padding: 10px 38px 10px 38px;
-      background-color: #ffd9d9;
-      border: 1px solid #ffd9d9;
+      background-color: #ff824c;
+      border: 1px solid #ff824c;
+      color: #fff;
       border-radius: 5px;
-      color:#363535;
       font-size: 14px;
       font-weight: 500;
     }
     .btn_2{
       padding: 10px 26px 10px 26px;
-      background-color: #ffd9d9;
-      border: 1px solid #ffd9d9;
+      background-color: #ff824c;
+      border: 1px solid #ff824c;
       border-radius: 5px;
-      color:#363535;
+      color:#fff;
       font-size: 14px;
       font-weight: 500;
     }
     .btn_3{
       padding: 10px 80px 10px 80px;
-      background-color: #ffd9d9;
-      border: 1px solid #ffd9d9;
+      background-color: #fff;
+      border: 2px solid #ff824c;
       border-radius: 30px;
       color:#363535;
       font-size: 20px;
       font-weight: 500;
       margin-left: 200px;
     }
+    .btn_3:hover{background-color: #ff824c; color: #fff;}
 
       .report{
       width: 120px; height: 46px;
@@ -83,11 +84,10 @@
     .adress_1{width: 190px; height: 40px;}
     .adress_2{width: 150px; height: 40px;}
     .clause{color: #f00;}
-    .tx_01{color: #363535; 
-    font-size: 16px;
-    text-decoration: underline;}
+
     .agree_1{margin: 30px 0px 60px;
             line-height: 20px;
+            font-size: 12px;
           }
       .join_txt{
         padding-left:300px ;

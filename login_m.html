@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>축지법_로그인</title>
+  <!-- 1. 여백 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 모바일 레이아웃 -->
+  <link href="./css/layout_m.css" rel="stylesheet" type="text/css">
+  <!-- 4. 로그인(모바일) 서식 -->
+  <link href="./css/login_m.css" rel="stylesheet" type="text/css">
+  <!-- 5. 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+</head>
+<body>
+  <!-- 상단헤더영억 -->
+  <header>
+    <h1>
+      <a href="sub_info_m.html" title="메인페이지로 바로가기">
+        <img src="./images/b_logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <input type="checkbox" id="close">
+    <label for="close" class="c_btn">
+      <a href="./index_m.html" title="메인페이지로"><i class="fas fa-times"></i></a>
+    </label>
+
+  </header>
+  <!-- 메인영역 -->
+  <main>
+    <h2>로그인</h2>
+
+    <fieldset>
+    <input type="text" id="id" placeholder="아이디" maxlength="16"><p></p>
+    <input type="text" id="pw" placeholder="비밀번호" maxlength="16"><p></p>
+    <input type="checkbox" id="check">
+    <label for="check" title="자동로그인">자동로그인</label>
+    </fieldset>
+
+    <a href="sub_info_m.html" title="메인으로 바로가기" class="login_btn">로그인</a>
+    <p></p>
+
+    <a href="find_pw.html" title="비밀번호 찾기" class="find_pw">비밀번호 찾기</a> &#x007C; <a href="find_id.html" title="아이디 찾기" class="find_id">아이디 찾기</a> &#x007C; <a href="./join_m.html" title="회원가입" class="join">회원가입</a>
+    
+    <p>소셜 로그인</p>
+    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" title="네이버 로그인"><img src="./images/naver_logo.png" alt="네이버 로그인" class="n_logo"></a><a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login" title="카카오 로그인"><img src="./images/kakao_logo.png" alt="카카오 로그인" class="k_logo"></a><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.co.kr%2F%3Fhl%3Dko&ec=GAZAmgQ&hl=ko&ifkv=AVQVeyyOODOg3CNl4YVvQnaOTryNll4ZNfkxijv83n-lkjh5t8kb6GXedjhBLT0W4iEbD7IIFBuV&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S268560936%3A1700114049088031&theme=glif" title="구글 로그인"><img src="./images/google_logo.png" alt="구글 로그인" class="g_logo"></a>
+    <p></p>
+
+    <a href="sub_info_m.html" title="메인으로 바로가기" class="b_login_btn">비회원로그인</a>
+
+  </main>
+</body>
+</html>
