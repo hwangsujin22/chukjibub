@@ -28,7 +28,6 @@ header{
   font-weight:500;
   color:#fff;
 }
-.lnb > li:first-child{display:none;}
 
 /* 메인 내비게이션 */
 .nav_wrap{
@@ -41,7 +40,6 @@ header{
 }
 .nav_wrap:hover{height:410px; background:rgba(0,0,0,.8);}
 .gnb > li{position:relative;}
-.gnb > li:first-child{display:none;}
 .gnb > li > a{padding:11px 30px;}
 .gnb > li:hover > a{
   border-bottom:4px solid #ff5207;

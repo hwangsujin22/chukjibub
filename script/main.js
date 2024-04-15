@@ -15,19 +15,19 @@ $(document).ready(function(){
 
   // 없는 콘텐츠 알림
   $('#gwangju').click(function(){
-    alert('준비된 축제가 없습니다.');
+    alert('광주 : 준비된 축제가 없습니다.');
     return false;
   });
   $('#ulsan').click(function(){
-    alert('준비된 축제가 없습니다.');
+    alert('울산 : 준비된 축제가 없습니다.');
     return false;
   });
   $('#ulleung').click(function(){
-    alert('준비된 축제가 없습니다.');
+    alert('울릉도 : 준비된 축제가 없습니다.');
     return false;
   });
   $('#dokdo').click(function(){
-    alert('준비된 축제가 없습니다.');
+    alert('독도 : 준비된 축제가 없습니다.');
     return false;
   });
 

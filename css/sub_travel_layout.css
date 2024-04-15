@@ -1,21 +1,9 @@
 @charset "utf-8";
 
 /* 메인 서식 */
-main{
-  width: 100%;
-  padding-top: 150px;
-}
-
-.slide{
-  width:100%;
-  margin-top: 10px;
-}
-
-main .back_g{
-  width: 1000px;
-  margin: 0px auto;
-}
-
+main{width:100%;padding-top: 150px;}
+.slide{width:100%;margin-top: 10px;}
+main .back_g{width: 1000px;margin: 0px auto;}
 .page_loca{
   width:1000px;
   margin: 0 auto;
@@ -30,12 +18,10 @@ main .back_g{
   width: 840px;
   margin: 0 auto;
 }
-
 .main_content > div > h2{
   font-size: 32px;
   margin:18px 0px 8px 0px;
 }
-
 .content_box select{
   float: right;
   width: 153px;
@@ -43,11 +29,8 @@ main .back_g{
   margin: 30px 23px 63px 0px;
   text-align: center;
   border-radius: 5px;
-
 }
-.control_box02{
-  margin-right: 80px;
-}
+.control_box02{margin-right: 80px;}
 .content_box h3{
   display: inline-flex;
   margin: 30px 400px 63px 0px;
@@ -67,29 +50,14 @@ main .back_g{
   position: absolute;
   bottom: 30px;
 } 
-
-.main_conlist01 >div>  label{
-  right: 46px;
-
-}
-.main_conlist01 > div > .map_btn{
-  right:0px;
-  
-}
-
-.main_conlist01 >div h3, p{
-  color: #363535;
-}
-
+.main_conlist01 >div>  label{right: 46px;}
+.main_conlist01 > div > .map_btn{right:0px;}
+.main_conlist01 >div h3, p{color: #363535;}
 .main_conlist01 >div h3{
   padding-top: 16px;
   font-size: 18px;
 }
-
-.main_conlist01 >div p{
-  padding: 6px 0px 6px 0px;
-}
-
+.main_conlist01 >div p{padding: 6px 0px;}
 
 .favariate01, .favariate02, .favariate03,.favariate04,.favariate05,.favariate06,.favariate07,.favariate08,.favariate09,.favariate10,.favariate11,.favariate12{
   display: inline-block;
@@ -105,10 +73,7 @@ main .back_g{
   background-image:url(../images/date/heart_icon.png);
 }
 
-.fastival_list h2{
-  display: inline;
-  margin-left: 80px;
-}
+.fastival_list h2{display: inline;margin-left: 80px;}
 .fastival_list select{
   margin-right: 80px;
   float: right;
@@ -121,20 +86,15 @@ main .back_g{
   background: #003cff;
   margin-top: 60px;
 }
-
 .more_v_b{
   width: 80px;height: 40px;
   display: block;
   margin: 0 auto;
-  border: 1px solid #ffd9d9;
   border-radius: 20px;
-  background:#ffd9d9;
+  background:#ff5207;
   text-align: center;
   line-height: 40px;
   text-decoration: none;
   margin-bottom: 50px;
 }
-
-.more_v_b a{
-  color: #363535;
-}
+.more_v_b a{color:#fff;}

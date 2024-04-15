@@ -8,12 +8,7 @@ main{
 }
 
 /* 첫번째 레이아웃 서식 */
-
-.sub_banner01{
-  width:1000px;
-  height:380px;
-}
-
+.sub_banner01{width:1000px;height:380px;}
 .info_img{
   width:617px; height:254px;
   position:relative;
@@ -30,7 +25,6 @@ main{
   border-radius:10px;
   padding:15px 30px;
 }
-
 .company_intro > p:first-child{
   font-size:30px;
   font-weight:bold;
@@ -41,8 +35,4 @@ main{
   font-size:18px;
   padding-bottom:90px;
 }
-
-.point{
-  color:#f00;
-  font-weight:bold;
-}
+.point{color:#f00;font-weight:bold;}
