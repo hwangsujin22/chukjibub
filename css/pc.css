@@ -8,14 +8,15 @@ header{
   top:0px; left:0px;
   z-index:100;
 }
-.h_inner{background:#363535;}
+.h_inner{background:#fae09d;}
 .h_top{
   height:94px;
   display:flex;
   justify-content:center;
   position:relative;
 }
-.h_top > h1{position:relative;z-index:101;padding:10px;}
+.h_top > h1{position:relative;z-index:101;padding:10px;width:112px;}
+.h_top > h1 img{width:100%;}
 .h_top > .lnb{
   width:120px;
   position:absolute;
@@ -25,8 +26,7 @@ header{
 }
 .lnb > li > a{
   font-size:14px;
-  font-weight:500;
-  color:#fff;
+  font-weight:bold;
 }
 
 /* 메인 내비게이션 */
@@ -65,13 +65,13 @@ header{
   font-weight:500;
   text-align:center;
   line-height:56px;
-  background:#363535;
+  background:#fae09d;
 }
 .h_bottom > ul{
   display:flex;
   justify-content:space-around;
 }
-.h_bottom a{color:#fff;}
+.h_bottom a{font-weight:bold;}
 
 /* 메인 서식 */
 main{
